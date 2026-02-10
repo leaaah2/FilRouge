@@ -31669,11 +31669,11 @@ Transform:
   m_GameObject: {fileID: 381244401}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 142.59142, y: 7.20383, z: -18.609543}
+  m_LocalPosition: {x: 165.74234, y: 7.3056197, z: -14.137273}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &382163918
 PrefabInstance:
@@ -41860,11 +41860,11 @@ Transform:
   m_GameObject: {fileID: 521277523}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 142.25279, y: 7.2026434, z: -19.105576}
+  m_LocalPosition: {x: 165.40372, y: 7.3044333, z: -14.633306}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &523147853
 PrefabInstance:
@@ -59119,11 +59119,11 @@ Transform:
   m_GameObject: {fileID: 723220729}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 141.8933, y: 7.2054243, z: -18.574142}
+  m_LocalPosition: {x: 165.04422, y: 7.3072143, z: -14.101872}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &724257821
 PrefabInstance:
@@ -83228,11 +83228,11 @@ Transform:
   m_GameObject: {fileID: 1057306407}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 142.23265, y: 7.203849, z: -18.58841}
+  m_LocalPosition: {x: 165.38358, y: 7.305639, z: -14.116139}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1057831914
 PrefabInstance:
@@ -88366,11 +88366,11 @@ Transform:
   m_GameObject: {fileID: 1130950299}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 142.67625, y: 7.2027864, z: -19.135162}
+  m_LocalPosition: {x: 165.82718, y: 7.3045764, z: -14.662892}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1132014530
 PrefabInstance:
@@ -108886,6 +108886,7 @@ GameObject:
   - component: {fileID: 1408581241}
   - component: {fileID: 1408581240}
   - component: {fileID: 1408581239}
+  - component: {fileID: 1408581242}
   m_Layer: 0
   m_Name: XR Origin (VR)
   m_TagString: Untagged
@@ -108921,7 +108922,7 @@ MonoBehaviour:
   m_Camera: {fileID: 1678035738}
   m_OriginBaseGameObject: {fileID: 1408581238}
   m_CameraFloorOffsetObject: {fileID: 888252189}
-  m_RequestedTrackingOriginMode: 0
+  m_RequestedTrackingOriginMode: 1
   m_CameraYOffset: 1.1176
 --- !u!4 &1408581241
 Transform:
@@ -108939,6 +108940,31 @@ Transform:
   - {fileID: 888252190}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!143 &1408581242
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408581238}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &1409175030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120573,6 +120599,44 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1553442682}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1556437272
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1556437273}
+  m_Layer: 0
+  m_Name: ObjectDemo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1556437273
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1556437272}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -23.15093, y: -0.10179, z: -4.47227}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1057306410}
+  - {fileID: 723220732}
+  - {fileID: 1130950302}
+  - {fileID: 521277526}
+  - {fileID: 2034026330}
+  - {fileID: 1915966733}
+  - {fileID: 381244404}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1556714161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -137917,6 +137981,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1753798535}
   - component: {fileID: 1753798534}
+  - component: {fileID: 1753798537}
+  - component: {fileID: 1753798536}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -137953,6 +138019,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1753798536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753798533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6fa7b4195685c3846be746c74f0ab2f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.LocomotionMediator
+--- !u!114 &1753798537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1753798533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a26c941eb8a46f7b6d00416227ab8c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.XR.Interaction.Toolkit::UnityEngine.XR.Interaction.Toolkit.Locomotion.XRBodyTransformer
+  m_XROrigin: {fileID: 1408581240}
+  m_BodyPositionEvaluatorObject: {fileID: 0}
+  m_ConstrainedBodyManipulatorObject: {fileID: 0}
+  m_UseCharacterControllerIfExists: 1
 --- !u!1001 &1754761416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147887,11 +147981,11 @@ Transform:
   m_GameObject: {fileID: 1915966730}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 141.57976, y: 7.2026434, z: -19.104218}
+  m_LocalPosition: {x: 164.73068, y: 7.3044333, z: -14.6319475}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1916603296
 PrefabInstance:
@@ -156321,11 +156415,11 @@ Transform:
   m_GameObject: {fileID: 2034026327}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 141.96037, y: 7.202649, z: -19.100845}
+  m_LocalPosition: {x: 165.1113, y: 7.304439, z: -14.628575}
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1556437273}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2034286305
 PrefabInstance:
@@ -165172,16 +165266,10 @@ SceneRoots:
   - {fileID: 410087041}
   - {fileID: 1753798535}
   - {fileID: 1408581241}
-  - {fileID: 1057306410}
-  - {fileID: 723220732}
-  - {fileID: 1130950302}
-  - {fileID: 521277526}
-  - {fileID: 2034026330}
-  - {fileID: 1915966733}
-  - {fileID: 381244404}
   - {fileID: 1027121525}
   - {fileID: 1025192290}
   - {fileID: 868768569}
   - {fileID: 1992892145}
   - {fileID: 1986134247}
   - {fileID: 1611051421}
+  - {fileID: 1556437273}
