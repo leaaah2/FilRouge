@@ -30,7 +30,7 @@ public class SocketInteractionManager : MonoBehaviour
 
         // Initialisation : On cache le Canvas 2 au départ
         if (canvasToShow != null) canvasToShow.gameObject.SetActive(false);
-        if (canvasToHide != null) canvasToHide.gameObject.SetActive(false);
+        if (canvasToHide != null) canvasToHide.gameObject.SetActive(true);
 
         // Gestion du Persistence Manager (Singleton)
         if (dataHolder == null)
