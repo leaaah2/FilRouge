@@ -35,7 +35,7 @@ public class WeatherApiClient : MonoBehaviour
             "https://api.open-meteo.com/v1/forecast?" +
             "latitude=" + lat +
             "&longitude=" + lon +
-            "&hourly=temperature_2m,cloud_cover,precipitation,weather_code,wind_speed_10m,wind_direction_10m" +
+            "&hourly=temperature_2m,relative_humidity_2m,cloud_cover,precipitation,weather_code,wind_speed_10m,wind_direction_10m" +
             "&past_days=2&forecast_days=3&timezone=auto";
 
         using UnityWebRequest request = UnityWebRequest.Get(url);
@@ -75,6 +75,7 @@ public class HourlyData
 {
     public string[] time;
     public float[] temperature_2m;
+    public float[] relative_humidity_2m;
     public float[] cloud_cover;
     public float[] precipitation;
     public int[] weather_code;

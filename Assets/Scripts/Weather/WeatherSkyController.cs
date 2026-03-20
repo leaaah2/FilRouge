@@ -46,6 +46,11 @@ public class WeatherSkyController : MonoBehaviour
     private float _cloudOffsetY;
     private bool _ready;
 
+    public event Action<int, float, float> OnClimateHourChanged;
+
+    private int _lastClimateHourIndex = -1;
+
+
     private void Awake()
     {
         if (apiClient != null)
@@ -148,13 +153,23 @@ public class WeatherSkyController : MonoBehaviour
         if (!TryGetInterpolation(targetLocalTime, out int i0, out int i1, out float t))
             return;
 
+
         float cloudCover = Mathf.Lerp(_data.hourly.cloud_cover[i0], _data.hourly.cloud_cover[i1], t);
         float precipitation = Mathf.Lerp(_data.hourly.precipitation[i0], _data.hourly.precipitation[i1], t);
         float windSpeed = Mathf.Lerp(_data.hourly.wind_speed_10m[i0], _data.hourly.wind_speed_10m[i1], t);
         float windDirection = Mathf.LerpAngle(_data.hourly.wind_direction_10m[i0], _data.hourly.wind_direction_10m[i1], t);
         float temperature = Mathf.Lerp(_data.hourly.temperature_2m[i0], _data.hourly.temperature_2m[i1], t);
+        float humidity = Mathf.Lerp(_data.hourly.relative_humidity_2m[i0], _data.hourly.relative_humidity_2m[i1], t);
 
         int weatherCode = t < 0.5f ? _data.hourly.weather_code[i0] : _data.hourly.weather_code[i1];
+
+        int climateHourIndex = i0;
+
+        if (climateHourIndex != _lastClimateHourIndex)
+        {
+            _lastClimateHourIndex = climateHourIndex;
+            OnClimateHourChanged?.Invoke(climateHourIndex, temperature, humidity);
+        }
 
         float cloud01 = Mathf.Clamp01(cloudCover / 100f);
         float rain01 = Mathf.Clamp01(precipitation / 2f);
@@ -176,6 +191,7 @@ public class WeatherSkyController : MonoBehaviour
         UpdateClouds(cloud01, windSpeed, windDirection, rain01, deltaTime);
         UpdateSkybox(dayFactor, cloud01, rain01);
         UpdateFog(cloud01, rain01, dayFactor);
+        
 
         Debug.Log(
             $"Time={targetLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | Clouds={cloudCover:0}% | " +
@@ -325,6 +341,25 @@ public class WeatherSkyController : MonoBehaviour
             DateTimeStyles.None,
             out dt
         );
+    }
+
+    public bool TryGetClimateAtCurrentTime(out float temperature, out float humidity, out int hourIndex)
+    {
+        temperature = 0f;
+        humidity = 0f;
+        hourIndex = -1;
+
+        if (!_ready || _data == null || _data.hourly == null || _data.hourly.time == null)
+            return false;
+
+        if (!TryGetInterpolation(currentLocalTime, out int i0, out int i1, out float t))
+            return false;
+
+        temperature = Mathf.Lerp(_data.hourly.temperature_2m[i0], _data.hourly.temperature_2m[i1], t);
+        humidity = Mathf.Lerp(_data.hourly.relative_humidity_2m[i0], _data.hourly.relative_humidity_2m[i1], t);
+        hourIndex = i0;
+
+        return true;
     }
 
     private void SetMaterialAlpha(Material mat, float alpha)
