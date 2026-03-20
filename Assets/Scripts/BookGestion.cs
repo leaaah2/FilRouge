@@ -2,29 +2,63 @@ using UnityEngine;
 
 public class GestionLivres : MonoBehaviour
 {
-    // Assignez vos Canvas dans l'inspecteur Unity
-    public GameObject canvasGauche;
-    public GameObject canvasDroit;
-    public GameObject canvasGauche2;
-    public GameObject canvasDroit2;
+    // État actuel du livre (0 = Pages 1, 1 = Pages 2, etc.)
+    private int etatPage = 0;
 
-    // Fonction appelée par le bouton "Droit" du Canvas Droit
-    public void AllerPageDroite()
+    [Header("Configuration des Pages")]
+    public GameObject pageGauche1; // Canvas Gauche initial
+    public GameObject pageDroite1; // Canvas Droit initial
+    public GameObject pageGauche2; // Canvas Gauche suivant
+    public GameObject pageDroite2; // Canvas Droit suivant
+
+    void Start()
     {
-        // Désactiver le Canvas Droit actuel
-        if (canvasDroit != null) canvasDroit.SetActive(false);
-
-        // Activer le Canvas 3
-        if (canvasGauche2 != null) canvasGauche2.SetActive(true);
+        // Initialisation : afficher seulement la première paire
+        MettreAJourAffichage();
     }
 
-    // Fonction appelée par le bouton "Gauche" du Canvas Gauche
+    // Fonction appelée par le bouton "Page Suivante" (sur la page de droite)
+    public void AllerPageDroite()
+    {
+        if (etatPage == 0)
+        {
+            etatPage = 1;
+            MettreAJourAffichage();
+            // Ici, vous pourriez déclencher une animation de rotation
+        }
+    }
+
+    // Fonction appelée par le bouton "Page Précédente" (sur la page de gauche)
     public void AllerPageGauche()
     {
-        // Désactiver le Canvas Gauche actuel
-        if (canvasGauche != null) canvasGauche.SetActive(false);
+        if (etatPage == 1)
+        {
+            etatPage = 0;
+            MettreAJourAffichage();
+        }
+    }
 
-        // Activer le Canvas 4
-        if (canvasDroit2 != null) canvasDroit2.SetActive(true);
+    private void MettreAJourAffichage()
+    {
+        if (etatPage == 0)
+        {
+            // Afficher la paire 1
+            if (pageGauche1) pageGauche1.SetActive(true);
+            if (pageDroite1) pageDroite1.SetActive(true);
+
+            // Masquer la paire 2
+            if (pageGauche2) pageGauche2.SetActive(false);
+            if (pageDroite2) pageDroite2.SetActive(false);
+        }
+        else if (etatPage == 1)
+        {
+            // Masquer la paire 1
+            if (pageGauche1) pageGauche1.SetActive(false);
+            if (pageDroite1) pageDroite1.SetActive(false);
+
+            // Afficher la paire 2
+            if (pageGauche2) pageGauche2.SetActive(true);
+            if (pageDroite2) pageDroite2.SetActive(true);
+        }
     }
 }
