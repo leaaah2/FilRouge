@@ -1,5 +1,7 @@
-using UnityEngine;
+using System.Diagnostics;
 using UnityEditor;
+using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 [RequireComponent(typeof(MeshFilter))]
 public class MeshInverter : MonoBehaviour
@@ -11,12 +13,17 @@ public class MeshInverter : MonoBehaviour
 
         InsideOut(mesh);
 
+        // This block prevents the build from failing
+#if UNITY_EDITOR
         string path = AssetDatabase.GenerateUniqueAssetPath("Assets/InvertedMesh.asset");
         AssetDatabase.CreateAsset(mesh, path);
         AssetDatabase.SaveAssets();
         AssetDatabase.Refresh();
 
         Debug.Log("Asset saved at: " + path);
+#else
+        Debug.Log("Asset creation skipped: Cannot use AssetDatabase in a build.");
+#endif
     }
 
     void InsideOut(Mesh mesh)
