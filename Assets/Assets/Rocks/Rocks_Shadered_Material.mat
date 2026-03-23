@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PP_Standard_Material
+  m_Name: Rocks_Shadered_Material
   m_Shader: {fileID: -6465566751694194690, guid: b26c90bb2b65ec447a53a4b8ba193c08, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -110,7 +110,7 @@ Material:
     - _DstBlend: 0
     - _DstBlendAlpha: 0
     - _EnvironmentReflections: 1
-    - _GlobalSnowAmount: 0.95
+    - _GlobalSnowAmount: 2.29
     - _GlossMapScale: 1
     - _Glossiness: 0.4472136
     - _GlossyReflections: 1
@@ -123,12 +123,12 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0.4472136
     - _SmoothnessTextureChannel: 0
-    - _SnowAngleLimitDot: -0.47
-    - _SnowInfluence: 2.15
-    - _SnowNoiseScale: 4.69
-    - _SnowNoiseStrength: 0.51
-    - _SnowSharpness: 0.99
-    - _SnowSmoothness: 0.36
+    - _SnowAngleLimitDot: -0.44
+    - _SnowInfluence: 1.1
+    - _SnowNoiseScale: 2.99
+    - _SnowNoiseStrength: 0.38
+    - _SnowSharpness: 0.96
+    - _SnowSmoothness: 1.1
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1

@@ -11,14 +11,13 @@ GameObject:
   - component: {fileID: 4865970572054268162}
   - component: {fileID: 3091591955804808977}
   - component: {fileID: 360017652100695841}
-  - component: {fileID: 945602564725201515}
   - component: {fileID: 1198649487739825164}
   m_Layer: 0
   m_Name: PP_Meadow_07.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4865970572054268162
 Transform:
@@ -68,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
+  - {fileID: 2100000, guid: 718af3bda6e0ac24ab2fa91cbcb812c4, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -92,21 +91,6 @@ MeshRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &945602564725201515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6685472263683428903}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.VisualScripting.Core::Unity.VisualScripting.Variables
-  _data:
-    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[],"$version":"A"},"$version":"A"}}'
-    _objectReferences: []
 --- !u!64 &1198649487739825164
 MeshCollider:
   m_ObjectHideFlags: 0

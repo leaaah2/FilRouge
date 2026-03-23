@@ -1895,6 +1895,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 20837862}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &24082348
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -138.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 57.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &24792998
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4563,96 +4632,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 56182652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &57007140
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 57007141}
-  - component: {fileID: 57007143}
-  - component: {fileID: 57007142}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &57007141
+--- !u!4 &57007141 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 2084289441}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57007140}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000004733235, y: 0.81386936, z: -0.000000066298036, w: 0.58104795}
-  m_LocalPosition: {x: -15.786375, y: -32.09298, z: -110.71225}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &57007142
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57007140}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &57007143
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 57007140}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &57381058
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4949,96 +4933,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 59313895}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &60381843
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 60381844}
-  - component: {fileID: 60381846}
-  - component: {fileID: 60381845}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_10
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &60381844
+--- !u!4 &60381844 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1433345708}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60381843}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.00000006469936, y: 0.3090173, z: -0.00000007696591, w: 0.9510564}
-  m_LocalPosition: {x: 67.34183, y: -32.093163, z: -92.49115}
-  m_LocalScale: {x: 2.0600002, y: 2.06, z: 2.0600002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &60381845
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60381843}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &60381846
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 60381843}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &63632259
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5853,96 +5752,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 77612344}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &78463604
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 78463605}
-  - component: {fileID: 78463607}
-  - component: {fileID: 78463606}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &78463605
+--- !u!4 &78463605 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 377476525}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78463604}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146034, y: 0.00000006762367, z: -0.00000008429374, w: 1}
-  m_LocalPosition: {x: -111.843025, y: -30.19689, z: -46.41548}
-  m_LocalScale: {x: 2.43254, y: 2.43254, z: 2.43254}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &78463606
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78463604}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &78463607
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 78463604}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &78993440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7053,96 +6867,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 90729466}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &92627349
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 92627350}
-  - component: {fileID: 92627352}
-  - component: {fileID: 92627351}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_9
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &92627350
+--- !u!4 &92627350 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1689252851}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92627349}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146034, y: -0.000000059617385, z: 0.000000001746234, w: 1}
-  m_LocalPosition: {x: 144.27467, y: -27.74281, z: 6.027341}
-  m_LocalScale: {x: 2.06, y: 2.06, z: 2.06}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &92627351
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92627349}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &92627352
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92627349}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &93490592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12009,6 +11738,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 123739798}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &124686161
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.18987
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.1898699
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.18987
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -158.69472
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30.239218
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 91.10651
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.05233514
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000000011438079
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99862957
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000021825741
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &125314819
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12897,6 +12695,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 131039764}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &132174844
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.2999687
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -98.69614
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9510564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000052700052
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.30901736
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000101417
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &132653522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21769,96 +21624,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 262371652}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &264055234
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 264055235}
-  - component: {fileID: 264055237}
-  - component: {fileID: 264055236}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &264055235
+--- !u!4 &264055235 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 503816712}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264055234}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.0000000049730486, y: 0.99813485, z: -0.000000081308386, w: -0.061047673}
-  m_LocalPosition: {x: -148.46132, y: -30.093178, z: 22.78892}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &264055236
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264055234}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &264055237
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 264055234}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &265469131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22377,96 +22147,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 414802743370857840, guid: aaf089771c0b0464fb9c3948ae286bb9, type: 3}
   m_PrefabInstance: {fileID: 267978097}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &269601710
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 269601711}
-  - component: {fileID: 269601713}
-  - component: {fileID: 269601712}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &269601711
+--- !u!4 &269601711 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 4347277435828804056}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269601710}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0000000036072474, y: 0.9862855, z: -0.000000021555952, w: 0.16504829}
-  m_LocalPosition: {x: 105.77875, y: -32.09335, z: 120.08555}
-  m_LocalScale: {x: 2.5799997, y: 2.58, z: 2.5799997}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &269601712
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269601710}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &269601713
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 269601710}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &269902076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25115,6 +24800,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 298726830}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &300439556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 300439558}
+  - component: {fileID: 300439557}
+  m_Layer: 0
+  m_Name: SnowSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &300439557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300439556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 314f7d07f97b78f4db4d9f6089f4a636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WeatherToSnowAccumulation
+  weatherSkyController: {fileID: 1260082377}
+  snowAmount: 0
+  accumulateSpeed: 0.05
+  meltSpeed: 0.03
+  rainMeltMultiplier: 2
+  freezeTemperature: 0
+  logSnowChanges: 0
+--- !u!4 &300439558
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 300439556}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -41.80741, y: 0.05963, z: 3.35252}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &301487133
 GameObject:
   m_ObjectHideFlags: 0
@@ -25614,96 +25350,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3633902127170413703, guid: 308350bbf710b5340b77d53dee61a088, type: 3}
   m_PrefabInstance: {fileID: 304286403}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &304864416
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 304864417}
-  - component: {fileID: 304864419}
-  - component: {fileID: 304864418}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &304864417
+--- !u!4 &304864417 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 132174844}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304864416}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000052700052, y: 0.30901736, z: -0.000000101417, w: 0.9510564}
-  m_LocalPosition: {x: 4.2999687, y: -32, z: -98.69614}
-  m_LocalScale: {x: 2.06, y: 2.06, z: 2.06}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &304864418
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304864416}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &304864419
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304864416}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &305247837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28513,7 +28164,7 @@ MonoBehaviour:
   rainParticles: {fileID: 1854369784}
   snowParticles: {fileID: 1668069903}
   rainMaxRate: 800
-  snowMaxRate: 400
+  snowMaxRate: 1200
   precipitationToMaxRate: 8
   snowTemperatureThreshold: 1.5
   positionOffset: {x: 0, y: 3, z: 0}
@@ -30461,96 +30112,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8516665771444013563, guid: c3f707af0fff51448829f7c6f6ef7f9c, type: 3}
   m_PrefabInstance: {fileID: 356368668}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &360888661
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 360888662}
-  - component: {fileID: 360888664}
-  - component: {fileID: 360888663}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_4 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &360888662
+--- !u!4 &360888662 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1393139876}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360888661}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -24.5, y: -32.1, z: 149.8}
-  m_LocalScale: {x: 1.8399999, y: 1.8399999, z: 1.8399999}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &360888663
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360888661}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &360888664
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 360888661}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &361256557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31587,6 +31153,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 375992480}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &377476525
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.43254
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -111.843025
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30.19689
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -46.41548
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.00000006762367
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008429374
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &378311873
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40393,6 +40028,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 501644677}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &503816712
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -148.46132
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30.093178
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 22.78892
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.061047673
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.0000000049730486
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.99813485
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000081308386
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &504290672
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -43595,96 +43295,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 543431695}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &543884570
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 543884571}
-  - component: {fileID: 543884573}
-  - component: {fileID: 543884572}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_2 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &543884571
+--- !u!4 &543884571 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 24082348}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543884570}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -138.8, y: -30.2, z: 57.7}
-  m_LocalScale: {x: 2.43254, y: 2.43254, z: 2.43254}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &543884572
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543884570}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &543884573
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 543884570}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &544794241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50567,96 +50182,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 621775552}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &622147617
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 622147618}
-  - component: {fileID: 622147620}
-  - component: {fileID: 622147619}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &622147618
+--- !u!4 &622147618 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 993737917}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622147617}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000008146035, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 111.181755, y: -32.958366, z: -59.14904}
-  m_LocalScale: {x: 3.18409, y: 3.18409, z: 3.18409}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &622147619
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622147617}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &622147620
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 622147617}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &623459850
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -56853,6 +56383,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 693146751}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &693850394
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -60.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 143.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &695119096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58111,6 +57706,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 707737983}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &710354898
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.5976398
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.59764
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.5976398
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 127.99897
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -36.563747
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 44.68969
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.996903
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000015125465
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.07864092
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000008617747
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &711569507
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68063,6 +67727,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 835300279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &838625536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -125.57312
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.09446
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 119.92676
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.8987941
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000052855928
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.43837097
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000058514154
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &838656550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -70642,96 +70375,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 871747977}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &872512640
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 872512641}
-  - component: {fileID: 872512643}
-  - component: {fileID: 872512642}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_8 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &872512641
+--- !u!4 &872512641 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1081308879}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872512640}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -78.9, y: -32.1, z: 127.7}
-  m_LocalScale: {x: 2.06, y: 2.06, z: 2.06}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &872512642
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872512640}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &872512643
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 872512640}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &875747659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -71250,6 +70898,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 203509881977389982, guid: b3ca023fa11875149837c6e0963d7257, type: 3}
   m_PrefabInstance: {fileID: 884412504}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &885667896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 147.56789
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093452
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -35.206543
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7933531
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000004900761
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6087618
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000006994532
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &886282298
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -74141,136 +73846,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 933817256}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &934660408
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 934660413}
-  - component: {fileID: 934660412}
-  - component: {fileID: 934660411}
-  - component: {fileID: 934660410}
-  - component: {fileID: 934660409}
-  m_Layer: 4
-  m_Name: RainWaterBlock
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &934660409
+--- !u!114 &934660409 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 8889149484008339188, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+  m_PrefabInstance: {fileID: 5454077418286215903}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934660408}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9767ddf0c78f53343b3f85144092562a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RainWaterLevelController
-  waterTransform: {fileID: 934660413}
-  dryY: -0.9
-  wetY: -0.4
-  riseSpeed: 0.5
-  maxConsideredPrecipitation: 8
---- !u!65 &934660410
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934660408}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!23 &934660411
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934660408}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 0a622a978c9c94942826d42978cacdfe, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &934660412
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934660408}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!4 &934660413
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 934660408}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.0008726948, w: 0.99999964}
-  m_LocalPosition: {x: -12.7, y: -0.9, z: 3.1}
-  m_LocalScale: {x: 100, y: 1, z: 100}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.1}
 --- !u!1001 &934802766
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -79221,6 +78807,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 993600180}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &993737917
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 3.18409
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 3.18409
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 3.18409
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 111.181755
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.958366
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -59.14904
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146035
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &993854220
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85113,6 +84768,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1080169991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1081308879
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -78.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 127.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1081594374
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -86741,6 +86453,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1099391807}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1099768369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -61.12567
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.0907
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -101.69235
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7660442
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.000000003481588
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.64278793
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000012258056
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1101365767
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -88739,96 +88520,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1124229165}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1124338810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1124338811}
-  - component: {fileID: 1124338813}
-  - component: {fileID: 1124338812}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_7 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1124338811
+--- !u!4 &1124338811 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 693850394}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124338810}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -60.5, y: -32.1, z: 143.5}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1124338812
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124338810}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1124338813
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1124338810}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1124354813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94091,6 +93787,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1193961826}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1194147319
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 26.456476
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093086
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -109.98446
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.87461966
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000007124682
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.48480973
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000003949276
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &1194366815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -98537,7 +98298,7 @@ MonoBehaviour:
   selectedLocation: {fileID: 11400000, guid: 515733d66926491489af975d27645a57, type: 2}
   sunLight: {fileID: 616585102}
   moonLight: {fileID: 1991360865}
-  moonVisual: {fileID: 0}
+  moonVisual: {fileID: 1431659449}
   proceduralSkybox: {fileID: 2100000, guid: 9cacaa21610013d46baab70a1e2cc963, type: 2}
   starsRenderer: {fileID: 2057457203}
   cloudsRenderer: {fileID: 563194200}
@@ -99909,96 +99670,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1270626514}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1271230485
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1271230486}
-  - component: {fileID: 1271230488}
-  - component: {fileID: 1271230487}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1271230486
+--- !u!4 &1271230486 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 1867836843}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271230485}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.00000003789204, y: -0.07845913, z: 3.3486136e-10, w: 0.99691737}
-  m_LocalPosition: {x: -140.4656, y: -32.093475, z: -24.3258}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1271230487
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271230485}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1271230488
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1271230485}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1271929043
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -103334,6 +103010,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1314638492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1315429570
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 97.06934
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.09363
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 90.27202
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6156617
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000010249507
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.7880106
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000023296696
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1316251915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -108736,6 +108481,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1387679991}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1393139876
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8399999
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 149.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1393531234
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111733,7 +111547,7 @@ Transform:
   m_GameObject: {fileID: 1431659448}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 171.45035, y: 16.7127, z: -0.76610947}
+  m_LocalPosition: {x: 114.27, y: 16.7127, z: 19.71}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -111817,7 +111631,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431659448}
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1432139282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111966,6 +111780,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1432366041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1433345708
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 67.34183
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093163
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -92.49115
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9510564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000006469936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3090173
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000007696591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1435536218
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120208,96 +120087,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1528293455}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1529823668
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1529823669}
-  - component: {fileID: 1529823671}
-  - component: {fileID: 1529823670}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_5
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1529823669
+--- !u!4 &1529823669 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 710354898}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529823668}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000015125465, y: 0.07864092, z: -0.00000008617747, w: 0.996903}
-  m_LocalPosition: {x: 127.99897, y: -36.563747, z: 44.68969}
-  m_LocalScale: {x: 2.5976398, y: 2.59764, z: 2.5976398}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1529823670
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529823668}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1529823671
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529823668}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1534732413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136048,96 +135842,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1669943530}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1670302699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1670302700}
-  - component: {fileID: 1670302702}
-  - component: {fileID: 1670302701}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_6
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1670302700
+--- !u!4 &1670302700 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 124686161}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670302699}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0000000011438079, y: 0.99862957, z: -0.000000021825741, w: 0.05233514}
-  m_LocalPosition: {x: -158.69472, y: -30.239218, z: 91.10651}
-  m_LocalScale: {x: 3.18987, y: 3.1898699, z: 3.18987}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1670302701
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670302699}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1670302702
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1670302699}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1672754236
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -136286,96 +135995,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1673034363}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1673548165
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1673548166}
-  - component: {fileID: 1673548168}
-  - component: {fileID: 1673548167}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1673548166
+--- !u!4 &1673548166 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 885667896}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673548165}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000004900761, y: 0.6087618, z: -0.00000006994532, w: 0.7933531}
-  m_LocalPosition: {x: 147.56789, y: -32.093452, z: -35.206543}
-  m_LocalScale: {x: 2.5799997, y: 2.58, z: 2.5799997}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1673548167
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673548165}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1673548168
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1673548165}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1673625395
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -138177,6 +137801,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 414802743370857840, guid: aaf089771c0b0464fb9c3948ae286bb9, type: 3}
   m_PrefabInstance: {fileID: 1688693819}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1689252851
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 144.27467
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -27.74281
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 6.027341
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000008146034
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.000000059617385
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.000000001746234
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1690183470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -139139,6 +138820,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1700530771}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1700759033
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0600002
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -92.05093
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093628
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -95.27295
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9510564
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000006469936
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.3090173
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.00000007696591
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02 (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
 --- !u!1001 &1700910522
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -142535,96 +142281,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1736660731}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1739192647
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1739192648}
-  - component: {fileID: 1739192650}
-  - component: {fileID: 1739192649}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1739192648
+--- !u!4 &1739192648 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1700759033}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739192647}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.00000006469936, y: 0.3090173, z: -0.00000007696591, w: 0.9510564}
-  m_LocalPosition: {x: -92.05093, y: -32.093628, z: -95.27295}
-  m_LocalScale: {x: 2.0600002, y: 2.06, z: 2.0600002}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1739192649
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739192647}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1739192650
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1739192647}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1740265876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -147947,6 +147608,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1817270587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1817644444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 84.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -34.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 154
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &1818161036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -155709,96 +155435,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1861417527}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1863346681
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1863346682}
-  - component: {fileID: 1863346684}
-  - component: {fileID: 1863346683}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1863346682
+--- !u!4 &1863346682 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 4279734842957893063}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863346681}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0.00000008347814, y: 0.95630467, z: 0.0000000026675404, w: -0.292372}
-  m_LocalPosition: {x: 127.39518, y: -32.093376, z: 77.62959}
-  m_LocalScale: {x: 2.06, y: 2.06, z: 2.06}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1863346683
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863346681}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1863346684
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1863346681}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1863377362
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -156095,6 +155736,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1866944129}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1867836843
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -140.4656
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093475
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -24.3258
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99691737
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000003789204
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.07845913
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 3.3486136e-10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &1868347048
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -159071,6 +158777,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1916603296}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1917165552
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -110.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -30.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 114.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &1918204564
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -162105,96 +161876,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1963146651}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1963465357
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1963465358}
-  - component: {fileID: 1963465360}
-  - component: {fileID: 1963465359}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1963465358
+--- !u!4 &1963465358 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 838625536}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963465357}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000052855928, y: -0.43837097, z: -0.000000058514154, w: 0.8987941}
-  m_LocalPosition: {x: -125.57312, y: -32.09446, z: 119.92676}
-  m_LocalScale: {x: 1.8399999, y: 1.8399999, z: 1.8399999}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1963465359
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963465357}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1963465360
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1963465357}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1965525036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -163675,96 +163361,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 1985138849}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1985968947
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1985968948}
-  - component: {fileID: 1985968950}
-  - component: {fileID: 1985968949}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1985968948
+--- !u!4 &1985968948 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1315429570}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985968947}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000010249507, y: -0.7880106, z: 0.000000023296696, w: 0.6156617}
-  m_LocalPosition: {x: 97.06934, y: -32.09363, z: 90.27202}
-  m_LocalScale: {x: 1.8399999, y: 1.8399999, z: 1.8399999}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1985968949
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985968947}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1985968950
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1985968947}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1 &1986134245
 GameObject:
   m_ObjectHideFlags: 0
@@ -164206,96 +163807,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7604544318131920843, guid: 80c2210578c1159448cfeb696f840448, type: 3}
   m_PrefabInstance: {fileID: 1987672875}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1988370309
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1988370310}
-  - component: {fileID: 1988370312}
-  - component: {fileID: 1988370311}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1988370310
+--- !u!4 &1988370310 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 1194147319}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988370309}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.00000007124682, y: -0.48480973, z: 0.00000003949276, w: 0.87461966}
-  m_LocalPosition: {x: 26.456476, y: -32.093086, z: -109.98446}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &1988370311
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988370309}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &1988370312
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1988370309}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &1989490537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -171014,96 +170530,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8516665771444013563, guid: c3f707af0fff51448829f7c6f6ef7f9c, type: 3}
   m_PrefabInstance: {fileID: 2013267517}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2013491708
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2013491709}
-  - component: {fileID: 2013491711}
-  - component: {fileID: 2013491710}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_02_3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2013491709
+--- !u!4 &2013491709 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+  m_PrefabInstance: {fileID: 1099768369}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013491708}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.000000003481588, y: 0.64278793, z: -0.00000012258056, w: 0.7660442}
-  m_LocalPosition: {x: -61.12567, y: -32.0907, z: -101.69235}
-  m_LocalScale: {x: 2.84, y: 2.84, z: 2.84}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &2013491710
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013491708}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2013491711
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2013491708}
-  m_Mesh: {fileID: -1162488442634701532, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &2015100945
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176223,96 +175654,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 2081538488}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2081868601
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2081868602}
-  - component: {fileID: 2081868604}
-  - component: {fileID: 2081868603}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_4 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2081868602
+--- !u!4 &2081868602 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 1817644444}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081868601}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.6, y: -34.5, z: 154}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &2081868603
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081868601}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2081868604
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2081868601}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &2083548595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -176609,6 +175955,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 2083991009}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2084289441
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -15.786375
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.09298
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -110.71225
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.58104795
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.00000004733235
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.81386936
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000066298036
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
 --- !u!1001 &2085192967
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -177497,96 +176908,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 414802743370857840, guid: aaf089771c0b0464fb9c3948ae286bb9, type: 3}
   m_PrefabInstance: {fileID: 2094862075}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2094964198
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2094964199}
-  - component: {fileID: 2094964201}
-  - component: {fileID: 2094964200}
-  m_Layer: 0
-  m_Name: PP_Forest_Mountain_Moss_01_5 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2094964199
+--- !u!4 &2094964199 stripped
 Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+  m_PrefabInstance: {fileID: 1917165552}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094964198}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -110.8, y: -30.1, z: 114.2}
-  m_LocalScale: {x: 2.58, y: 2.58, z: 2.58}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1025192290}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &2094964200
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094964198}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RayTraceProcedural: 0
-  m_RayTracingAccelStructBuildFlagsOverride: 0
-  m_RayTracingAccelStructBuildFlags: 1
-  m_SmallMeshCulling: 1
-  m_ForceMeshLod: -1
-  m_MeshLodSelectionBias: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: -936794110674994927, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_MaskInteraction: 0
-  m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &2094964201
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2094964198}
-  m_Mesh: {fileID: 4890176300591525589, guid: 87fb5fc404606fa4a9796cfc4a02203e, type: 3}
 --- !u!1001 &2095210542
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -181540,6 +180866,177 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6808468977809633672, guid: 57588bdd935219a458489f81e960ab55, type: 3}
   m_PrefabInstance: {fileID: 2146267035}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4279734842957893063
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 127.39518
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.093376
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 77.62959
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.292372
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000008347814
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.95630467
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0000000026675404
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1755002966529282847, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6725885929149496552, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_02
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 05f08d062d1adc2418ec137b2be9fb04, type: 3}
+--- !u!1001 &4347277435828804056
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1025192290}
+    m_Modifications:
+    - target: {fileID: 1816152507097816721, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_Name
+      value: PP_Forest_Mountain_Moss_01
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 105.77875
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -32.09335
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 120.08555
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.16504829
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.0000000036072474
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9862855
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.000000021555952
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3081513087111695370, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c48e968c6573704182b3bc11fc202b8, type: 3}
+--- !u!1001 &5454077418286215903
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99999964
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0008726948
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1130307918599375152, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5457919148093274897, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
+      propertyPath: m_Name
+      value: RainWaterBlock
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 5eb569a7ae4a9fa4b8e6d6fd358885d9, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -181557,4 +181054,5 @@ SceneRoots:
   - {fileID: 1844828733}
   - {fileID: 2110411524}
   - {fileID: 340714154}
-  - {fileID: 934660413}
+  - {fileID: 5454077418286215903}
+  - {fileID: 300439558}
