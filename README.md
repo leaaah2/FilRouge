@@ -14,7 +14,7 @@ L'utilisateur est plongé dans un environnement interactif où les conditions m�
 * **Interface Utilisateur (UI) Spatiale :** Panneaux flottants interactifs permettant de sélectionner différentes villes ou de naviguer dans les prévisions des jours à venir.
 * **Interactions VR :** Manipulation de l'interface et des éléments 3D à l'aide des contrôleurs VR (pointage, saisie, retour haptique).
 * **Immersion Audio :** Son spatialisé qui s'adapte en temps réel aux conditions climatiques (ex: bruit de la pluie, souffle du vent).
-* **Données en temps réel :** Connexion à une API météo (ex: OpenWeatherMap) pour afficher de vraies prévisions.
+* **Données en temps réel :** Connexion à une API météo (Open-Meteo) pour afficher de vraies prévisions.
 
 ## Technologies et Outils Utilisés
 * **Moteur 3D :** [Unity 3D](https://unity.com/) 
