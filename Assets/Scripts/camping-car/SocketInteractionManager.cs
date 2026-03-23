@@ -18,6 +18,9 @@ public class SocketInteractionManager : MonoBehaviour
     [Header("Scène")]
     public string nextSceneName;      // Nom de la scène suivante
 
+    [Header("Données de localisation")]
+    public SelectedLocationSO selectedLocation; // ScriptableObject pour stocker les données de localisation
+
     // Références internes
     private UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
     private Localisation localisationData;
@@ -75,7 +78,9 @@ public class SocketInteractionManager : MonoBehaviour
         if (localisationData == null) return;
 
         // 3. Sauvegarde des données dans le manager persistant AVANT le changement de scène
-        dataHolder.SaveData(localisationData.cityName, localisationData.latitude, localisationData.longitude);
+        selectedLocation.locationName = localisationData.cityName;
+        selectedLocation.latitude = localisationData.latitude;
+        selectedLocation.longitude = localisationData.longitude;
 
         Debug.Log("Données sauvegardées. Chargement de : " + nextSceneName);
 

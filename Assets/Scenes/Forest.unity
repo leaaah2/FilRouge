@@ -98572,15 +98572,15 @@ MonoBehaviour:
   fogMaxDensity: 0.01
   weatherAudioController: {fileID: 1450994120}
   applyOnStartClosestToNow: 1
-  useDebugWeather: 0
-  useDebugTime: 0
-  debugTemperature: 2.6
+  useDebugWeather: 1
+  useDebugTime: 1
+  debugTemperature: -8.5
   debugHumidity: 75
   debugPrecipitation: 8
   debugCloudCover: 40
   debugWindSpeed: 2
   debugWindDirection: 80
-  debugHourOfDay: 14
+  debugHourOfDay: 12
   enableLogs: 1
 --- !u!114 &1260082378
 MonoBehaviour:
