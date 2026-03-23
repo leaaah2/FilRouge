@@ -34,8 +34,31 @@ public class WeatherSkyController : MonoBehaviour
     public float fogMinDensity = 0.0005f;
     public float fogMaxDensity = 0.01f;
 
+    [Header("Audio")]
+    public WeatherAudioController weatherAudioController;
+
     [Header("Debug")]
     public bool applyOnStartClosestToNow = true;
+    public bool useDebugWeather = false;
+    public bool useDebugTime = false;
+
+    [Range(-30f, 45f)] public float debugTemperature = 12f;
+    [Range(0f, 100f)] public float debugHumidity = 75f;
+    [Range(0f, 8f)] public float debugPrecipitation = 0f;
+    [Range(0f, 100f)] public float debugCloudCover = 40f;
+    [Range(0f, 100f)] public float debugWindSpeed = 0f;
+    [Range(0f, 360f)] public float debugWindDirection = 0f;
+
+    [Range(0f, 23.9f)] public float debugHourOfDay = 14f;
+
+
+    [Header("Logging")]
+    public bool enableLogs = true;
+
+    private int _lastLoggedHourIndex = -1;
+    private float _lastLoggedTemperature = float.MinValue;
+    private float _lastLoggedPrecipitation = float.MinValue;
+
     public DateTime currentLocalTime;
 
     private WeatherResponse _data;
@@ -45,6 +68,8 @@ public class WeatherSkyController : MonoBehaviour
     private float _cloudOffsetX;
     private float _cloudOffsetY;
     private bool _ready;
+
+    public event System.Action<float, float, float, float> OnPrecipitationChanged;
 
     private void Awake()
     {
@@ -144,23 +169,61 @@ public class WeatherSkyController : MonoBehaviour
     private void ApplyAtTime(DateTime targetLocalTime, float deltaTime)
     {
         if (!_ready) return;
+    
 
-        if (!TryGetInterpolation(targetLocalTime, out int i0, out int i1, out float t))
+        float temperature;
+        float humidity;
+        float cloudCover;
+        float windSpeed;
+        float windDirection;
+        float precipitation;
+        int weatherCode;
+
+        DateTime appliedLocalTime = targetLocalTime;
+
+        if (useDebugTime)
+        {
+            appliedLocalTime = new DateTime(
+                targetLocalTime.Year,
+                targetLocalTime.Month,
+                targetLocalTime.Day,
+                Mathf.Clamp(Mathf.FloorToInt(debugHourOfDay), 0, 23),
+                Mathf.Clamp(Mathf.FloorToInt(debugHourOfDay % 1f * 60f), 0, 59),
+                0
+            );
+        }
+
+        if (!TryGetInterpolation(appliedLocalTime, out int i0, out int i1, out float t))
             return;
 
-        float cloudCover = Mathf.Lerp(_data.hourly.cloud_cover[i0], _data.hourly.cloud_cover[i1], t);
-        float precipitation = Mathf.Lerp(_data.hourly.precipitation[i0], _data.hourly.precipitation[i1], t);
-        float windSpeed = Mathf.Lerp(_data.hourly.wind_speed_10m[i0], _data.hourly.wind_speed_10m[i1], t);
-        float windDirection = Mathf.LerpAngle(_data.hourly.wind_direction_10m[i0], _data.hourly.wind_direction_10m[i1], t);
-        float temperature = Mathf.Lerp(_data.hourly.temperature_2m[i0], _data.hourly.temperature_2m[i1], t);
+        if (useDebugWeather)
+        {
+            temperature = debugTemperature;
+            //humidity = debugHumidity;
+            cloudCover = debugCloudCover;
+            windSpeed = debugWindSpeed;
+            windDirection = debugWindDirection;
 
-        int weatherCode = t < 0.5f ? _data.hourly.weather_code[i0] : _data.hourly.weather_code[i1];
+            precipitation = debugPrecipitation;
+            weatherCode = 0;
+        }
+        else
+        {
+            temperature = Mathf.Lerp(_data.hourly.temperature_2m[i0], _data.hourly.temperature_2m[i1], t);
+            //humidity = Mathf.Lerp(_data.hourly.relative_humidity_2m[i0], _data.hourly.relative_humidity_2m[i1], t);
+            cloudCover = Mathf.Lerp(_data.hourly.cloud_cover[i0], _data.hourly.cloud_cover[i1], t);
+            windSpeed = Mathf.Lerp(_data.hourly.wind_speed_10m[i0], _data.hourly.wind_speed_10m[i1], t);
+            windDirection = Mathf.LerpAngle(_data.hourly.wind_direction_10m[i0], _data.hourly.wind_direction_10m[i1], t);
+            precipitation = Mathf.Lerp(_data.hourly.precipitation[i0], _data.hourly.precipitation[i1], t);
+            weatherCode = t < 0.5f ? _data.hourly.weather_code[i0] : _data.hourly.weather_code[i1];
+        }
+
 
         float cloud01 = Mathf.Clamp01(cloudCover / 100f);
         float rain01 = Mathf.Clamp01(precipitation / 2f);
 
         TimeSpan offset = TimeSpan.FromSeconds(_utcOffsetSeconds);
-        DateTimeOffset dto = new DateTimeOffset(targetLocalTime, offset);
+        DateTimeOffset dto = new DateTimeOffset(appliedLocalTime, offset);
 
         Vector3 sunDir = SolarPosition.SunDirectionENU(selectedLocation.latitude, selectedLocation.longitude, dto);
         SolarPosition.ApplyToDirectionalLight(sunLight, sunDir);
@@ -177,10 +240,37 @@ public class WeatherSkyController : MonoBehaviour
         UpdateSkybox(dayFactor, cloud01, rain01);
         UpdateFog(cloud01, rain01, dayFactor);
 
-        Debug.Log(
-            $"Time={targetLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | Clouds={cloudCover:0}% | " +
-            $"Rain={precipitation:0.00} | Wind={windSpeed:0.0}km/h dir={windDirection:0} | Code={weatherCode} | SunAlt={sunAltitude:0.0}"
-        );
+        OnPrecipitationChanged?.Invoke(temperature, precipitation, windSpeed, windDirection);
+
+        if (weatherAudioController != null)
+        {
+            weatherAudioController.ApplyWeatherAudio(precipitation, windSpeed, sunAltitude);
+        }
+
+        if (enableLogs)
+        {
+            bool shouldLog =
+                i0 != _lastLoggedHourIndex ||
+                Mathf.Abs(temperature - _lastLoggedTemperature) > 0.5f ||
+                Mathf.Abs(precipitation - _lastLoggedPrecipitation) > 0.2f;
+
+            if (shouldLog)
+            {
+                _lastLoggedHourIndex = i0;
+                _lastLoggedTemperature = temperature;
+                _lastLoggedPrecipitation = precipitation;
+
+                Debug.Log(
+                    $"Time={appliedLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | Clouds={cloudCover:0}% | " +
+                    $"Precipitation={precipitation:0.00} | Wind={windSpeed:0.0}km/h dir={windDirection:0} | Code={weatherCode} | SunAlt={sunAltitude:0.0}"
+                );
+
+                //Debug.Log(
+                //    $"Time={appliedLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | " +
+                //    $"Humidity={humidity:0}% | Rain={precipitation:0.00} | Clouds={cloudCover:0}%"
+                //);
+            }
+        }
     }
 
     private void UpdateSun(float dayFactor, float cloud01)
@@ -365,4 +455,6 @@ public class WeatherSkyController : MonoBehaviour
         if (mat.HasProperty("_BaseMap"))
             mat.SetTextureOffset("_BaseMap", offset);
     }
+
+
 }
