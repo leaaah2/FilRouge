@@ -52,7 +52,7 @@ Pour ouvrir et éditer ce projet, vous aurez besoin de :
 
      Naviguez dans le dossier Assets/Scenes (ou l'emplacement de ta scène principale).
 
-     Double-cliquez sur la scène principale et appuyez sur le bouton Play avec votre casque VR branché.
+     Double-cliquez sur la première scene (Camping-car) et appuyez sur le bouton Play avec votre casque VR branché.
 
 ## Utilisation
 Une fois dans l'application, utilisez les pointeurs de vos contrôleurs VR pour interagir avec les menus flottants. 
