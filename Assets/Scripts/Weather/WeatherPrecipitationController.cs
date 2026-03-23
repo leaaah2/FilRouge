@@ -54,8 +54,8 @@ public class WeatherPrecipitationController : MonoBehaviour
         ApplyWind(rainParticles, windSpeed, windDirection);
         ApplyWind(snowParticles, windSpeed * 0.3f, windDirection);
 
-        if (rainWaterLevelController != null && shouldRain)
-            rainWaterLevelController.ApplyPrecipitation(precipitationMm);
+        if (rainWaterLevelController != null)
+            rainWaterLevelController.ApplyClimate(temperatureC, precipitationMm);
     }
 
     private void SetEmission(ParticleSystem ps, float rate)

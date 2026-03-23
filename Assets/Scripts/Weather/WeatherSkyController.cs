@@ -244,7 +244,7 @@ public class WeatherSkyController : MonoBehaviour
 
         if (weatherAudioController != null)
         {
-            weatherAudioController.ApplyWeatherAudio(precipitation, windSpeed, sunAltitude);
+            weatherAudioController.ApplyWeatherAudio(temperature, precipitation, windSpeed, sunAltitude);
         }
 
         if (enableLogs)
