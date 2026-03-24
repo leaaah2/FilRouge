@@ -21,27 +21,26 @@ public class SocketInteractionManager : MonoBehaviour
     [Header("Données de localisation")]
     public SelectedLocationSO selectedLocation; // ScriptableObject pour stocker les données de localisation
 
+    [Header("Fade")]
+    public ScreenFader screenFader;
+    public float fadeOutDuration = 1f;
+    public float delayBeforeLoad = 0.1f;
+
+    private bool _isLoading = false;
+
     // Références internes
     private UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
     private Localisation localisationData;
-    private static LocalisationDataHolder dataHolder; // Référence au gardien de données
+
 
     void Awake()
     {
         socketInteractor = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor>();
         localisationData = GetComponent<Localisation>();
-
+        
         // Initialisation : On cache le Canvas 2 au départ
         if (canvasToShow != null) canvasToShow.gameObject.SetActive(false);
         if (canvasToHide != null) canvasToHide.gameObject.SetActive(true);
-
-        // Gestion du Persistence Manager (Singleton)
-        if (dataHolder == null)
-        {
-            GameObject holderObj = new GameObject("LocalisationDataHolder");
-            DontDestroyOnLoad(holderObj);
-            dataHolder = holderObj.AddComponent<LocalisationDataHolder>();
-        }
 
         if (socketInteractor != null)
         {
@@ -75,17 +74,30 @@ public class SocketInteractionManager : MonoBehaviour
     // Fonction liée au bouton du Canvas 2
     public void OnConfirmButtonClick()
     {
+        if (_isLoading) return;
         if (localisationData == null) return;
 
-        // 3. Sauvegarde des données dans le manager persistant AVANT le changement de scène
+        _isLoading = true;
+        StartCoroutine(ConfirmAndLoadRoutine());
+    }
+
+    private System.Collections.IEnumerator ConfirmAndLoadRoutine()
+    {
+        if (localisationData == null)
+            yield break;
+
         selectedLocation.locationName = localisationData.cityName;
         selectedLocation.latitude = localisationData.latitude;
         selectedLocation.longitude = localisationData.longitude;
 
         Debug.Log("Données sauvegardées. Chargement de : " + nextSceneName);
 
-        // 4. Chargement de la scène
-        // Si vous devez envoyer à l'API, faites-le ici (Coroutine) avant le LoadScene
+        if (screenFader != null)
+            yield return screenFader.FadeToBlack(fadeOutDuration);
+
+        if (delayBeforeLoad > 0f)
+            yield return new WaitForSeconds(delayBeforeLoad);
+
         SceneManager.LoadScene(nextSceneName);
     }
 }

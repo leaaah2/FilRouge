@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Weather/Selected Location")]
+[CreateAssetMenu(menuName = "Weather/SelectedLocation")]
 public class SelectedLocationSO : ScriptableObject
 {
     public string locationName = "Chicoutimi";
