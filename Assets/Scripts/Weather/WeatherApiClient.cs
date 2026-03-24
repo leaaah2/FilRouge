@@ -38,6 +38,7 @@ public class WeatherApiClient : MonoBehaviour
             "&hourly=temperature_2m,relative_humidity_2m,cloud_cover,precipitation,weather_code,wind_speed_10m,wind_direction_10m" +
             "&past_days=2&forecast_days=3&timezone=auto";
 
+        Debug.Log("Weather request started");
         using UnityWebRequest request = UnityWebRequest.Get(url);
         yield return request.SendWebRequest();
 

@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "DebugControls",
+    "maps": [
+        {
+            "name": "Debug",
+            "id": "00f3e750-7b14-449d-986a-f08094265660",
+            "actions": [
+                {
+                    "name": "ToggleDebugPanel",
+                    "type": "Button",
+                    "id": "a0952e18-858a-476a-b893-e486e5a22db4",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f3015625-8d51-4f11-a56d-0fe3491e5a79",
+                    "path": "<XRController>{LeftHand}/{SecondaryButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleDebugPanel",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
