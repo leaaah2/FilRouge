@@ -9,11 +9,12 @@ public class WeatherPrecipitationController : MonoBehaviour
 
     [Header("Emission")]
     public float rainMaxRate = 800f;
-    public float snowMaxRate = 400f;
+    public float snowMaxRate = 1200f;
     public float precipitationToMaxRate = 8f;
 
-    [Header("Snow Threshold")]
-    public float snowTemperatureThreshold = 1.5f;
+    [Header("Rain / Snow Blend")]
+    public float fullSnowTemperature = -1.5f;
+    public float fullRainTemperature = 2.5f;
 
     [Header("Follow")]
     public Vector3 positionOffset = new Vector3(0f, 8f, 0f);
@@ -22,37 +23,82 @@ public class WeatherPrecipitationController : MonoBehaviour
     [Header("Wind")]
     public float windInfluence = 0.5f;
 
+    [Header("Smoothing")]
+    public float emissionBlendSpeed = 5f;
+
     public RainWaterLevelController rainWaterLevelController;
+
+    private float _currentRainRate;
+    private float _currentSnowRate;
+    private float _targetRainRate;
+    private float _targetSnowRate;
+
+    private float _currentRainWindSpeed;
+    private float _currentSnowWindSpeed;
+    private float _targetRainWindSpeed;
+    private float _targetSnowWindSpeed;
+    private float _currentWindDirection;
+    private float _targetWindDirection;
 
     private void LateUpdate()
     {
-        if (followTarget == null) return;
+        if (followTarget != null)
+        {
+            Vector3 p = followTarget.position + positionOffset;
 
-        Vector3 p = followTarget.position + positionOffset;
+            if (!followY)
+                p.y = transform.position.y;
 
-        if (!followY)
-            p.y = transform.position.y;
+            transform.position = p;
+        }
 
+        // Smooth precipitation rates
+        _currentRainRate = Mathf.Lerp(_currentRainRate, _targetRainRate, Time.deltaTime * emissionBlendSpeed);
+        _currentSnowRate = Mathf.Lerp(_currentSnowRate, _targetSnowRate, Time.deltaTime * emissionBlendSpeed);
 
-        transform.position = p;
+        // Smooth wind
+        _currentRainWindSpeed = Mathf.Lerp(_currentRainWindSpeed, _targetRainWindSpeed, Time.deltaTime * emissionBlendSpeed);
+        _currentSnowWindSpeed = Mathf.Lerp(_currentSnowWindSpeed, _targetSnowWindSpeed, Time.deltaTime * emissionBlendSpeed);
+        _currentWindDirection = Mathf.LerpAngle(_currentWindDirection, _targetWindDirection, Time.deltaTime * emissionBlendSpeed);
+
+        SetEmission(rainParticles, _currentRainRate);
+        SetEmission(snowParticles, _currentSnowRate);
+
+        SetPlaying(rainParticles, _currentRainRate > 0.5f);
+        SetPlaying(snowParticles, _currentSnowRate > 0.5f);
+
+        ApplyWind(rainParticles, _currentRainWindSpeed, _currentWindDirection);
+        ApplyWind(snowParticles, _currentSnowWindSpeed, _currentWindDirection);
     }
 
     public void ApplyClimate(float temperatureC, float precipitationMm, float windSpeed, float windDirection)
     {
         float precip01 = Mathf.Clamp01(precipitationMm / precipitationToMaxRate);
 
-        bool shouldSnow = precipitationMm > 0.05f && temperatureC <= snowTemperatureThreshold;
-        bool shouldRain = precipitationMm > 0.05f && temperatureC > snowTemperatureThreshold;
+        if (precipitationMm <= 0.05f)
+        {
+            _targetRainRate = 0f;
+            _targetSnowRate = 0f;
+            _targetRainWindSpeed = 0f;
+            _targetSnowWindSpeed = 0f;
+            _targetWindDirection = windDirection;
 
+            if (rainWaterLevelController != null)
+                rainWaterLevelController.ApplyClimate(temperatureC, precipitationMm);
 
-        SetEmission(rainParticles, shouldRain ? precip01 * rainMaxRate : 0f);
-        SetEmission(snowParticles, shouldSnow ? precip01 * snowMaxRate : 0f);
+            return;
+        }
 
-        SetPlaying(rainParticles, shouldRain);
-        SetPlaying(snowParticles, shouldSnow);
+        // 0 = full snow, 1 = full rain
+        float rainBlend = Mathf.InverseLerp(fullSnowTemperature, fullRainTemperature, temperatureC);
+        float snowBlend = 1f - rainBlend;
 
-        ApplyWind(rainParticles, windSpeed, windDirection);
-        ApplyWind(snowParticles, windSpeed * 0.3f, windDirection);
+        _targetRainRate = precip01 * rainMaxRate * rainBlend;
+        _targetSnowRate = precip01 * snowMaxRate * snowBlend;
+
+        _targetRainWindSpeed = windSpeed;
+        _targetSnowWindSpeed = windSpeed * 0.3f;
+        _targetWindDirection = windDirection;
 
         if (rainWaterLevelController != null)
             rainWaterLevelController.ApplyClimate(temperatureC, precipitationMm);
@@ -60,7 +106,8 @@ public class WeatherPrecipitationController : MonoBehaviour
 
     private void SetEmission(ParticleSystem ps, float rate)
     {
-        if (ps == null) return;
+                if (ps == null) return;
+
         var emission = ps.emission;
         emission.rateOverTime = rate;
     }
