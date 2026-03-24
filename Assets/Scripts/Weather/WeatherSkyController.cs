@@ -89,6 +89,7 @@ public class WeatherSkyController : MonoBehaviour
 
     public event System.Action<float, float, float, float> OnPrecipitationChanged;
     public event System.Action<int, float, float, float, float, float> OnClimateSampleChanged;
+    public event Action<float, float> OnCampfireWeatherChanged;
 
     private void Awake()
     {
@@ -268,6 +269,8 @@ public class WeatherSkyController : MonoBehaviour
         
 
         OnPrecipitationChanged?.Invoke(temperature, precipitation, windSpeed, windDirection);
+
+        OnCampfireWeatherChanged?.Invoke(sunAltitude, precipitation);
 
         if (weatherAudioController != null)
         {
