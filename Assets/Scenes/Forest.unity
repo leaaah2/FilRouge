@@ -98255,9 +98255,13 @@ MonoBehaviour:
   proceduralSkybox: {fileID: 2100000, guid: 9cacaa21610013d46baab70a1e2cc963, type: 2}
   starsRenderer: {fileID: 2057457203}
   cloudsRenderer: {fileID: 563194200}
+  cloudsDomeTransform: {fileID: 563194199}
   minCloudSpeed: 0.002
   maxCloudSpeed: 0.02
   cloudCoverageAlphaMultiplier: 0.85
+  invertWindDirectionForClouds: 0
+  cloudAngularSpeedMultiplier: 0.1
+  cloudAngularSpeedResponse: 2
   sunMaxIntensity: 1.15
   moonMaxIntensity: 0.2
   ambientDay: 1
