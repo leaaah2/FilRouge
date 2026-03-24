@@ -1,9 +1,7 @@
-using System.Diagnostics;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.UI; // Pour manipuler Text et Canvas
 using UnityEngine.XR.Interaction.Toolkit;
-using static System.Net.Mime.MediaTypeNames;
 using Debug = UnityEngine.Debug;
 using SelectEnterEventArgs = UnityEngine.XR.Interaction.Toolkit.SelectEnterEventArgs;
 using TMPro;
@@ -11,15 +9,16 @@ using TMPro;
 public class SocketInteractionManager : MonoBehaviour
 {
     [Header("Canvas & UI")]
-    public Canvas canvasToHide;       // Canvas 1 (optionnel, si vous en avez un ouvert)
-    public Canvas canvasToShow;       // Canvas 2 (celui avec le bouton et le texte)
-    public TextMeshProUGUI cityTextDisplay;      // Le composant Text qui affichera le nom de la ville
+    public Canvas canvasToHide;
+    public Canvas canvasToShow;
+    public TextMeshProUGUI cityTextDisplay;
 
     [Header("Scène")]
-    public string nextSceneName;      // Nom de la scène suivante
+    public string nextSceneName;
 
     [Header("Données de localisation")]
-    public SelectedLocationSO selectedLocation; // ScriptableObject pour stocker les données de localisation
+    public Localisation localisationData;
+    public SelectedLocationSO selectedLocation;
 
     [Header("Fade")]
     public ScreenFader screenFader;
@@ -28,17 +27,14 @@ public class SocketInteractionManager : MonoBehaviour
 
     private bool _isLoading = false;
 
-    // Références internes
     private UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor socketInteractor;
-    private Localisation localisationData;
 
+    private static SocketInteractionManager currentActiveManager;
 
     void Awake()
     {
         socketInteractor = GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactors.XRSocketInteractor>();
-        localisationData = GetComponent<Localisation>();
-        
-        // Initialisation : On cache le Canvas 2 au départ
+
         if (canvasToShow != null) canvasToShow.gameObject.SetActive(false);
         if (canvasToHide != null) canvasToHide.gameObject.SetActive(true);
 
@@ -48,18 +44,36 @@ public class SocketInteractionManager : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        if (socketInteractor != null)
+        {
+            socketInteractor.selectEntered.RemoveListener(OnPinPlaced);
+        }
+
+        if (currentActiveManager == this)
+            currentActiveManager = null;
+    }
+
     private void OnPinPlaced(SelectEnterEventArgs args)
     {
-        Debug.Log("Pin détecté ! Ville : " + localisationData.cityName);
+        currentActiveManager = this;
 
-        // 1. Gestion des Canvas : On cache le 1, on montre le 2
+        if (localisationData == null)
+        {
+            Debug.LogWarning("[CampingCar] Localisation data missing on selected socket.");
+            return;
+        }
+
+        Debug.Log("Pin détecté ! Ville : " + localisationData.cityName);
+        Debug.Log("[CampingCar] Prochaine destination: " + localisationData.cityName);
+
         if (canvasToHide != null) canvasToHide.gameObject.SetActive(false);
 
         if (canvasToShow != null)
         {
             canvasToShow.gameObject.SetActive(true);
 
-            // 2. Mise à jour du texte avec le nom de la ville
             if (cityTextDisplay != null)
             {
                 cityTextDisplay.text = "Destination : " + localisationData.cityName;
@@ -71,26 +85,39 @@ public class SocketInteractionManager : MonoBehaviour
         }
     }
 
-    // Fonction liée au bouton du Canvas 2
+    // Cette méthode est celle à brancher sur le bouton Validate
     public void OnConfirmButtonClick()
     {
+        if (currentActiveManager == null)
+        {
+            Debug.LogWarning("[CampingCar] No active socket manager selected.");
+            return;
+        }
+
+        currentActiveManager.ConfirmSelection();
+    }
+
+    private void ConfirmSelection()
+    {
         if (_isLoading) return;
-        if (localisationData == null) return;
+        if (localisationData == null)
+        {
+            Debug.LogWarning("[CampingCar] Localisation data is null on confirm.");
+            return;
+        }
 
         _isLoading = true;
         StartCoroutine(ConfirmAndLoadRoutine());
     }
 
-    private System.Collections.IEnumerator ConfirmAndLoadRoutine()
+    private IEnumerator ConfirmAndLoadRoutine()
     {
-        if (localisationData == null)
-            yield break;
-
         selectedLocation.locationName = localisationData.cityName;
         selectedLocation.latitude = localisationData.latitude;
         selectedLocation.longitude = localisationData.longitude;
 
         Debug.Log("Données sauvegardées. Chargement de : " + nextSceneName);
+        Debug.Log($"[CampingCar] Sending to forest: {localisationData.cityName} | lat={localisationData.latitude} lon={localisationData.longitude}");
 
         if (screenFader != null)
             yield return screenFader.FadeToBlack(fadeOutDuration);

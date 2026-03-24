@@ -999,7 +999,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: c6485b08fad9b7a439d8f967d435f23e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1180,6 +1180,7 @@ MonoBehaviour:
   canvasToShow: {fileID: 1163771125}
   cityTextDisplay: {fileID: 1375205221}
   nextSceneName: Forest
+  localisationData: {fileID: 452552007}
   selectedLocation: {fileID: 11400000, guid: 515733d66926491489af975d27645a57, type: 2}
   screenFader: {fileID: 2002993432}
   fadeOutDuration: 1
@@ -1743,7 +1744,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: c6485b08fad9b7a439d8f967d435f23e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1858,6 +1859,7 @@ MonoBehaviour:
   canvasToShow: {fileID: 1163771125}
   cityTextDisplay: {fileID: 1375205221}
   nextSceneName: Forest
+  localisationData: {fileID: 811586746}
   selectedLocation: {fileID: 11400000, guid: 515733d66926491489af975d27645a57, type: 2}
   screenFader: {fileID: 2002993432}
   fadeOutDuration: 1
@@ -2512,7 +2514,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: c6485b08fad9b7a439d8f967d435f23e, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2693,6 +2695,7 @@ MonoBehaviour:
   canvasToShow: {fileID: 1163771125}
   cityTextDisplay: {fileID: 1375205221}
   nextSceneName: Forest
+  localisationData: {fileID: 1199781565}
   selectedLocation: {fileID: 11400000, guid: 515733d66926491489af975d27645a57, type: 2}
   screenFader: {fileID: 2002993432}
   fadeOutDuration: 1
