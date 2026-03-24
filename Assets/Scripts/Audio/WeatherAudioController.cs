@@ -14,7 +14,8 @@ public class WeatherAudioController : MonoBehaviour
     [Header("Ranges")]
     public float maxConsideredRain = 8f;
     public float maxConsideredWind = 40f;
-    public float snowTemperatureThreshold = 1.5f;
+    public float fullSnowTemperature = -1.5f;
+    public float fullRainTemperature = 2.5f;
     public float blizzardWindThreshold = 18f;
 
     [Header("Volumes")]
@@ -115,21 +116,25 @@ public class WeatherAudioController : MonoBehaviour
         float precip01 = Mathf.Clamp01(precipitationMm / maxConsideredRain);
         float wind01 = Mathf.Clamp01(windSpeed / maxConsideredWind);
 
-        bool isSnowing = precipitationMm > 0.05f && temperature <= snowTemperatureThreshold;
-        bool isRaining = precipitationMm > 0.05f && temperature > snowTemperatureThreshold;
-        bool isBlizzard = isSnowing && windSpeed >= blizzardWindThreshold;
+        bool hasPrecipitation = precipitationMm > 0.05f;
+
+        // 0 = full snow, 1 = full rain
+        float rainBlend = hasPrecipitation
+            ? Mathf.InverseLerp(fullSnowTemperature, fullRainTemperature, temperature)
+            : 0f;
+
+        float snowBlend = hasPrecipitation ? 1f - rainBlend : 0f;
+
+        bool isBlizzard = hasPrecipitation && snowBlend > 0.5f && windSpeed >= blizzardWindThreshold;
 
         // Rain
-        _targetRainSoft = isRaining
-            ? Mathf.Lerp(0f, rainSoftMaxVolume, Mathf.SmoothStep(0f, 1f, precip01))
-            : 0f;
+        float rainIntensity = precip01 * rainBlend;
 
-        _targetRainHeavy = isRaining
-            ? Mathf.Lerp(0f, rainHeavyMaxVolume, Mathf.SmoothStep(0.25f, 1f, precip01))
-            : 0f;
+        _targetRainSoft = Mathf.Lerp(0f, rainSoftMaxVolume, Mathf.SmoothStep(0f, 1f, rainIntensity));
+        _targetRainHeavy = Mathf.Lerp(0f, rainHeavyMaxVolume, Mathf.SmoothStep(0.25f, 1f, rainIntensity));
 
-        _targetRainSoftPitch = Mathf.Lerp(0.95f, 1.05f, precip01);
-        _targetRainHeavyPitch = Mathf.Lerp(0.95f, 1.08f, precip01);
+        _targetRainSoftPitch = Mathf.Lerp(0.95f, 1.05f, rainIntensity);
+        _targetRainHeavyPitch = Mathf.Lerp(0.95f, 1.08f, rainIntensity);
 
         // Wind
         _targetWind = Mathf.Lerp(0f, windMaxVolume, wind01);
@@ -147,14 +152,13 @@ public class WeatherAudioController : MonoBehaviour
         _targetNight *= Mathf.Lerp(1f, 0.5f, precip01);
 
         // Snow
-        _targetSnow = isSnowing
-            ? Mathf.Lerp(0f, snowMaxVolume, Mathf.SmoothStep(0f, 1f, precip01))
-            : 0f;
+        float snowIntensity = precip01 * snowBlend;
 
-        _targetSnowPitch = Mathf.Lerp(0.95f, 1.03f, precip01);
+        _targetSnow = Mathf.Lerp(0f, snowMaxVolume, Mathf.SmoothStep(0f, 1f, snowIntensity));
+        _targetSnowPitch = Mathf.Lerp(0.95f, 1.03f, snowIntensity);
 
         // Blizzard
-        float blizzardFactor = isBlizzard ? precip01 * wind01 : 0f;
+        float blizzardFactor = isBlizzard ? snowIntensity * wind01 : 0f;
         _targetBlizzard = Mathf.Lerp(0f, blizzardMaxVolume, blizzardFactor);
         _targetBlizzardPitch = Mathf.Lerp(0.95f, 1.05f, wind01);
     }
