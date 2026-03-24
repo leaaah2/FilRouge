@@ -1,6 +1,6 @@
 Shader "CustomRenderTexture/CloudsDomeProcedural"
 {
-	Properties
+    Properties
     {
         _Color ("Tint", Color) = (1,1,1,1)
         _CloudScale ("Cloud Scale", Range(0.1, 10)) = 2
@@ -44,39 +44,49 @@ Shader "CustomRenderTexture/CloudsDomeProcedural"
                 UNITY_VERTEX_OUTPUT_STEREO
             };
 
-            float hash21(float2 p)
+            float hash31(float3 p)
             {
-                p = frac(p * float2(123.34, 456.21));
-                p += dot(p, p + 45.32);
-                return frac(p.x * p.y);
+                p = frac(p * 0.1031);
+                p += dot(p, p.yzx + 33.33);
+                return frac((p.x + p.y) * p.z);
             }
 
-            float noise(float2 p)
+            float noise3(float3 p)
             {
-                float2 i = floor(p);
-                float2 f = frac(p);
+                float3 i = floor(p);
+                float3 f = frac(p);
 
-                float a = hash21(i);
-                float b = hash21(i + float2(1, 0));
-                float c = hash21(i + float2(0, 1));
-                float d = hash21(i + float2(1, 1));
+                float n000 = hash31(i + float3(0,0,0));
+                float n100 = hash31(i + float3(1,0,0));
+                float n010 = hash31(i + float3(0,1,0));
+                float n110 = hash31(i + float3(1,1,0));
+                float n001 = hash31(i + float3(0,0,1));
+                float n101 = hash31(i + float3(1,0,1));
+                float n011 = hash31(i + float3(0,1,1));
+                float n111 = hash31(i + float3(1,1,1));
 
-                float2 u = f * f * (3.0 - 2.0 * f);
+                float3 u = f * f * (3.0 - 2.0 * f);
 
-                return lerp(a, b, u.x) +
-                       (c - a) * u.y * (1.0 - u.x) +
-                       (d - b) * u.x * u.y;
+                float nx00 = lerp(n000, n100, u.x);
+                float nx10 = lerp(n010, n110, u.x);
+                float nx01 = lerp(n001, n101, u.x);
+                float nx11 = lerp(n011, n111, u.x);
+
+                float nxy0 = lerp(nx00, nx10, u.y);
+                float nxy1 = lerp(nx01, nx11, u.y);
+
+                return lerp(nxy0, nxy1, u.z);
             }
 
-            float fbm(float2 p)
+            float fbm3(float3 p)
             {
                 float v = 0.0;
                 float a = 0.5;
 
-                v += noise(p) * a; p *= 2.02; a *= 0.5;
-                v += noise(p) * a; p *= 2.03; a *= 0.5;
-                v += noise(p) * a; p *= 2.01; a *= 0.5;
-                v += noise(p) * a;
+                v += noise3(p) * a; p *= 2.02; a *= 0.5;
+                v += noise3(p) * a; p *= 2.03; a *= 0.5;
+                v += noise3(p) * a; p *= 2.01; a *= 0.5;
+                v += noise3(p) * a;
 
                 return v;
             }
@@ -97,21 +107,21 @@ Shader "CustomRenderTexture/CloudsDomeProcedural"
             {
                 UNITY_SETUP_STEREO_EYE_INDEX_POST_VERTEX(i);
 
-                // Convert sphere direction to stable spherical coordinates
                 float3 d = normalize(i.objDir);
 
-                float u = atan2(d.x, d.z) / (2.0 * UNITY_PI) + 0.5;
-                float v = d.y * 0.5 + 0.5;
+                // Seamless on a sphere
+                float3 p = d * _CloudScale + _Offset.xyz;
 
-                float2 p = float2(u, v) * _CloudScale + _Offset.xy;
+                float n = fbm3(p);
 
-                float n = fbm(p);
-
-                float alpha = smoothstep(_CloudThreshold - _Softness, _CloudThreshold + _Softness, n);
+                float alpha = smoothstep(
+                    _CloudThreshold - _Softness,
+                    _CloudThreshold + _Softness,
+                    n
+                );
 
                 fixed4 col = _Color;
                 col.a *= alpha;
-
                 return col;
             }
             ENDCG

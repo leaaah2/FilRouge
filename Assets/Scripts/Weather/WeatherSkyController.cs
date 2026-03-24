@@ -18,10 +18,23 @@ public class WeatherSkyController : MonoBehaviour
     public Renderer starsRenderer;
     public Renderer cloudsRenderer;
 
+    public Transform cloudsDomeTransform;
+
     [Header("Cloud Motion")]
     public float minCloudSpeed = 0.002f;
     public float maxCloudSpeed = 0.02f;
     public float cloudCoverageAlphaMultiplier = 0.85f;
+
+    [Header("Cloud Dome Rotation")]
+    public bool invertWindDirectionForClouds = false;
+    public float cloudAngularSpeedMultiplier = 8f;
+    public float cloudAngularSpeedResponse = 2f;
+
+    private Vector3 _cloudCurrentRotationAxis = Vector3.forward;
+    private Vector3 _cloudTargetRotationAxis = Vector3.forward;
+
+    private float _cloudCurrentAngularSpeed = 0f;
+    private float _cloudTargetAngularSpeed = 0f;
 
     [Header("Lighting")]
     public float sunMaxIntensity = 1.15f;
@@ -56,6 +69,7 @@ public class WeatherSkyController : MonoBehaviour
     public bool enableLogs = true;
 
     private int _lastLoggedHourIndex = -1;
+    private int _lastClimateSampleIndex = -1;
     private float _lastLoggedTemperature = float.MinValue;
     private float _lastLoggedPrecipitation = float.MinValue;
 
@@ -74,6 +88,7 @@ public class WeatherSkyController : MonoBehaviour
     private int _lastClimateHourIndex = -1;
 
     public event System.Action<float, float, float, float> OnPrecipitationChanged;
+    public event System.Action<int, float, float, float, float, float> OnClimateSampleChanged;
 
     private void Awake()
     {
@@ -207,7 +222,6 @@ public class WeatherSkyController : MonoBehaviour
             cloudCover = debugCloudCover;
             windSpeed = debugWindSpeed;
             windDirection = debugWindDirection;
-
             precipitation = debugPrecipitation;
             weatherCode = 0;
         }
@@ -260,6 +274,12 @@ public class WeatherSkyController : MonoBehaviour
             weatherAudioController.ApplyWeatherAudio(temperature, precipitation, windSpeed, sunAltitude);
         }
 
+        if (i0 != _lastClimateSampleIndex)
+        {
+            _lastClimateSampleIndex = i0;
+            OnClimateSampleChanged?.Invoke(i0, temperature, humidity, precipitation, windSpeed, windDirection);
+        }
+
         if (enableLogs)
         {
             bool shouldLog =
@@ -273,15 +293,11 @@ public class WeatherSkyController : MonoBehaviour
                 _lastLoggedTemperature = temperature;
                 _lastLoggedPrecipitation = precipitation;
 
+
                 Debug.Log(
-                    $"Time={appliedLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | Clouds={cloudCover:0}% | " +
+                    $"Time={appliedLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | Humidity={humidity:0}% | Clouds={cloudCover:0}% | " +
                     $"Precipitation={precipitation:0.00} | Wind={windSpeed:0.0}km/h dir={windDirection:0} | Code={weatherCode} | SunAlt={sunAltitude:0.0}"
                 );
-
-                //Debug.Log(
-                //    $"Time={appliedLocalTime:yyyy-MM-dd HH:mm} | Temp={temperature:0.0}°C | " +
-                //    $"Humidity={humidity:0}% | Rain={precipitation:0.00} | Clouds={cloudCover:0}%"
-                //);
             }
         }
     }
@@ -331,27 +347,68 @@ public class WeatherSkyController : MonoBehaviour
         SetMaterialAlpha(_starsMat, starFactor);
     }
 
+
     private void UpdateClouds(float cloud01, float windSpeed, float windDirectionDeg, float rain01, float deltaTime)
     {
-        if (_cloudsMat == null) return;
+        if (_cloudsMat == null && cloudsDomeTransform == null) return;
 
-        float speed01 = Mathf.InverseLerp(0f, 50f, windSpeed);
-        float cloudSpeed = Mathf.Lerp(minCloudSpeed, maxCloudSpeed, speed01);
+        float effectiveWindDirection = invertWindDirectionForClouds
+            ? windDirectionDeg + 180f
+            : windDirectionDeg;
 
-        float dirRad = windDirectionDeg * Mathf.Deg2Rad;
-        Vector2 dir = new Vector2(Mathf.Sin(dirRad), Mathf.Cos(dirRad)).normalized;
+        float dirRad = effectiveWindDirection * Mathf.Deg2Rad;
+        Vector3 moveDir = new Vector3(Mathf.Sin(dirRad), 0f, Mathf.Cos(dirRad)).normalized;
 
-        _cloudOffsetX += dir.x * cloudSpeed * deltaTime;
-        _cloudOffsetY += dir.y * cloudSpeed * deltaTime;
+        if (moveDir.sqrMagnitude > 0.0001f)
+        {
 
-        if (_cloudsMat.HasProperty("_Offset"))
-            _cloudsMat.SetVector("_Offset", new Vector4(_cloudOffsetX, _cloudOffsetY, 0f, 0f));
+            _cloudTargetRotationAxis = Vector3.Cross(Vector3.up, moveDir).normalized;
+        }
 
-        float alpha = Mathf.Clamp01(cloud01 * cloudCoverageAlphaMultiplier + rain01 * 0.15f);
-        SetMaterialAlpha(_cloudsMat, alpha);
+        _cloudTargetAngularSpeed = windSpeed * cloudAngularSpeedMultiplier;
 
-        Color baseColor = Color.Lerp(new Color(1f, 1f, 1f, alpha), new Color(0.45f, 0.45f, 0.5f, alpha), rain01);
-        SetMaterialColor(_cloudsMat, baseColor);
+        _cloudCurrentRotationAxis = Vector3.Slerp(
+            _cloudCurrentRotationAxis,
+            _cloudTargetRotationAxis,
+            deltaTime * cloudAngularSpeedResponse
+        ).normalized;
+
+        _cloudCurrentAngularSpeed = Mathf.Lerp(
+            _cloudCurrentAngularSpeed,
+            _cloudTargetAngularSpeed,
+            deltaTime * cloudAngularSpeedResponse
+        );
+
+        if (cloudsDomeTransform != null && _cloudCurrentRotationAxis.sqrMagnitude > 0.0001f)
+        {
+            float deltaAngle = _cloudCurrentAngularSpeed * deltaTime;
+            cloudsDomeTransform.Rotate(_cloudCurrentRotationAxis, deltaAngle, Space.Self);
+        }
+
+
+        if (_cloudsMat != null)
+        {
+            if (_cloudsMat.HasProperty("_CloudThreshold"))
+            {
+                float threshold = Mathf.Lerp(0.75f, 0.35f, cloud01);
+                _cloudsMat.SetFloat("_CloudThreshold", threshold);
+            }
+
+            if (_cloudsMat.HasProperty("_Softness"))
+            {
+                float softness = Mathf.Lerp(0.18f, 0.3f, cloud01);
+                _cloudsMat.SetFloat("_Softness", softness);
+            }
+
+            float alpha = Mathf.Clamp01(cloud01 * cloudCoverageAlphaMultiplier + rain01 * 0.15f);
+            SetMaterialAlpha(_cloudsMat, alpha);
+
+            Color clearCloud = new Color(1f, 1f, 1f, alpha);
+            Color rainCloud = new Color(0.65f, 0.68f, 0.75f, alpha);
+            Color baseColor = Color.Lerp(clearCloud, rainCloud, rain01);
+
+            SetMaterialColor(_cloudsMat, baseColor);
+        }
     }
 
     private void UpdateSkybox(float dayFactor, float cloud01, float rain01)

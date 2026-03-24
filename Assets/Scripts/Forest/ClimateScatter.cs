@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -72,42 +73,79 @@ public class ClimateScatter : MonoBehaviour
     public bool randomYRotation = true;
     public Vector2 globalScaleMultiplierRange = new Vector2(1f, 1f);
 
+    [Header("Transitions")]
+    public float growDuration = 0.35f;
+    public float shrinkDuration = 0.25f;
+    public bool animateAtRuntime = true;
+
     [Header("Deterministic")]
     public int seed = 12345;
+
+    [Header("Layout Variation")]
+    public bool rotateScatterBeforeRebuild = true;
+    public Vector2 randomYRotationRange = new Vector2(-20f, 20f);
 
     [Header("Parenting")]
     public Transform container;
     public string spawnedContainerName = "Spawned";
 
-    public void Generate()
+    [System.Serializable]
+    private class ScatterPointState
     {
-        if (rules == null || rules.Length == 0)
-        {
-            Debug.LogWarning($"[{name}] No climate rules assigned.");
+        public Vector3 position;
+        public Vector3 normal;
+        public Quaternion rotation;
+        public float scaleMultiplier;
+
+        public GameObject currentInstance;
+        public GameObject currentPrefab;
+        public Coroutine transitionRoutine;
+    }
+
+    private readonly List<ScatterPointState> _points = new();
+    private bool _pointsBuilt = false;
+
+    private string _lastRuleSignature = "";
+    private bool _hasAppliedClimateOnce = false;
+
+    public void SetClimate(float temperature, float humidity)
+    {
+        currentTemperature = temperature;
+        currentHumidity = Mathf.Clamp(humidity, 0f, 100f);
+    }
+
+    public void ApplyClimateAndRefresh(float temperature, float humidity)
+    {
+        SetClimate(temperature, humidity);
+        EnsurePointsBuilt();
+        RefreshPoints();
+    }
+
+    public void EnsurePointsBuilt()
+    {
+        if (_pointsBuilt && _points.Count > 0)
             return;
-        }
 
-        List<ClimateScatterRule> validRules = GetValidRules();
-        if (validRules.Count == 0)
-        {
-            Debug.LogWarning($"[{name}] No valid rules for temperature={currentTemperature}, humidity={currentHumidity}");
+        BuildSpawnPoints();
+    }
+
+    public void BuildSpawnPoints()
+    {
+        ClearSpawnedInstances();
+        _points.Clear();
+
+        int targetCount = GetPointCapacity();
+        if (targetCount <= 0)
             return;
-        }
 
-        Transform parent = GetOrCreateSpawnedContainer();
-
-        Random.State oldState = Random.state;
+        var oldState = Random.state;
         Random.InitState(seed);
 
-        int effectiveCount = GetAdjustedCount();
+        List<Vector2> points2D = distribution == DistributionMode.PoissonDisc
+            ? GeneratePoissonPoints(targetCount)
+            : GenerateRandomPoints(targetCount);
 
-        List<Vector2> points = distribution == DistributionMode.PoissonDisc
-            ? GeneratePoissonPoints(effectiveCount)
-            : GenerateRandomPoints(effectiveCount);
-
-        int spawnedCount = 0;
-
-        foreach (Vector2 p in points)
+        foreach (Vector2 p in points2D)
         {
             Vector3 rayOrigin = transform.TransformPoint(new Vector3(p.x, rayStartHeight, p.y));
 
@@ -125,104 +163,209 @@ public class ClimateScatter : MonoBehaviour
             if (slope > maxSlopeAngle)
                 continue;
 
-            ClimateScatterRule rule = PickRule(validRules);
-            if (rule == null)
-                continue;
-
-            if (rule.prefabs == null || rule.prefabs.Length == 0)
-                continue;
-
-            if (Random.value > rule.spawnChance)
-                continue;
-
-            GameObject prefab = rule.prefabs[Random.Range(0, rule.prefabs.Length)];
-            if (prefab == null)
-                continue;
-
-#if UNITY_EDITOR
-            GameObject obj = (GameObject)PrefabUtility.InstantiatePrefab(prefab, parent);
-            Undo.RegisterCreatedObjectUndo(obj, "Climate Scatter Spawn");
-#else
-            GameObject obj = Instantiate(prefab, parent);
-#endif
-
-            obj.transform.position = hit.point;
-
+            Quaternion rotation;
             if (alignToNormal)
             {
-                Quaternion rot = Quaternion.FromToRotation(Vector3.up, hit.normal);
-
+                rotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
                 if (randomYRotation)
-                    rot = Quaternion.AngleAxis(Random.Range(0f, 360f), hit.normal) * rot;
-
-                obj.transform.rotation = rot;
+                    rotation = Quaternion.AngleAxis(Random.Range(0f, 360f), hit.normal) * rotation;
             }
             else
             {
-                obj.transform.rotation = Quaternion.Euler(
-                    0f,
-                    randomYRotation ? Random.Range(0f, 360f) : 0f,
-                    0f
-                );
+                rotation = Quaternion.Euler(0f, randomYRotation ? Random.Range(0f, 360f) : 0f, 0f);
             }
 
-            Vector2 scaleRange = rule.overrideScaleRange ? rule.scaleMultiplierRange : globalScaleMultiplierRange;
-            float scaleMult = Random.Range(scaleRange.x, scaleRange.y);
-            obj.transform.localScale = prefab.transform.localScale * scaleMult;
+            float scaleMult = Random.Range(globalScaleMultiplierRange.x, globalScaleMultiplierRange.y);
 
-            spawnedCount++;
+            _points.Add(new ScatterPointState
+            {
+                position = hit.point,
+                normal = hit.normal,
+                rotation = rotation,
+                scaleMultiplier = scaleMult
+            });
         }
 
         Random.state = oldState;
+        _pointsBuilt = true;
 
-        Debug.Log($"[{name}] Climate scatter generated {spawnedCount} objects. T={currentTemperature}, H={currentHumidity}");
+        Debug.Log($"[{name}] Built {_points.Count} scatter points.");
     }
 
-    public void Clear()
+    public void RefreshPoints()
     {
-        if (container == null)
-            return;
+        EnsurePointsBuilt();
 
-        Transform spawned = container.Find(spawnedContainerName);
-        if (spawned == null)
-            return;
+        List<ClimateScatterRule> validRules = GetValidRules();
+        float activeRatio = GetActiveRatio();
 
-        for (int i = spawned.childCount - 1; i >= 0; i--)
+        for (int i = 0; i < _points.Count; i++)
         {
-#if UNITY_EDITOR
-            Undo.DestroyObjectImmediate(spawned.GetChild(i).gameObject);
-#else
-            DestroyImmediate(spawned.GetChild(i).gameObject);
-#endif
+            ScatterPointState point = _points[i];
+
+            bool shouldOccupy = Hash01(i, 11) <= activeRatio;
+            GameObject desiredPrefab = null;
+            ClimateScatterRule chosenRule = null;
+
+            if (shouldOccupy && validRules.Count > 0)
+            {
+                chosenRule = PickRuleDeterministic(validRules, i);
+                if (chosenRule != null && chosenRule.prefabs != null && chosenRule.prefabs.Length > 0)
+                {
+                    float spawnRoll = Hash01(i, 23);
+                    if (spawnRoll <= chosenRule.spawnChance)
+                    {
+                        desiredPrefab = PickPrefabDeterministic(chosenRule, i);
+                    }
+                }
+            }
+
+            ApplyPointTarget(point, desiredPrefab, chosenRule);
         }
     }
 
-    public void SetClimate(float temperature, float humidity)
+    public void ClearSpawnedInstances()
     {
-        currentTemperature = temperature;
-        currentHumidity = Mathf.Clamp(humidity, 0f, 100f);
+        foreach (ScatterPointState point in _points)
+        {
+            if (point.transitionRoutine != null && Application.isPlaying)
+                StopCoroutine(point.transitionRoutine);
+
+            if (point.currentInstance != null)
+                DestroyScatterObject(point.currentInstance);
+
+            point.currentInstance = null;
+            point.currentPrefab = null;
+            point.transitionRoutine = null;
+        }
+
+        if (container == null) return;
+        Transform spawned = container.Find(spawnedContainerName);
+        if (spawned == null) return;
+
+        for (int i = spawned.childCount - 1; i >= 0; i--)
+        {
+            DestroyScatterObject(spawned.GetChild(i).gameObject);
+        }
     }
 
-    public int GetAdjustedCount()
+    public void ClearAll()
     {
-        if (!scaleCountWithHumidity)
-            return baseCount;
+        ClearSpawnedInstances();
+        _points.Clear();
+        _pointsBuilt = false;
+    }
 
-        float humidity01 = Mathf.Clamp01(currentHumidity / 100f);
-        float mult = Mathf.Lerp(humidityCountMultiplier.x, humidityCountMultiplier.y, humidity01);
-        return Mathf.Max(1, Mathf.RoundToInt(baseCount * mult));
+    private void ApplyPointTarget(ScatterPointState point, GameObject desiredPrefab, ClimateScatterRule rule)
+    {
+        if (desiredPrefab == point.currentPrefab && point.currentInstance != null)
+            return;
+
+        Vector2 scaleRange = rule != null && rule.overrideScaleRange
+            ? rule.scaleMultiplierRange
+            : globalScaleMultiplierRange;
+
+        float ruleScaleMult = Mathf.Lerp(scaleRange.x, scaleRange.y, Hash01(GetPointStableId(point), 99));
+        Vector3 targetScale = desiredPrefab != null
+            ? desiredPrefab.transform.localScale * ruleScaleMult
+            : Vector3.zero;
+
+        if (!Application.isPlaying || !animateAtRuntime)
+        {
+            ReplaceImmediate(point, desiredPrefab, targetScale);
+            return;
+        }
+
+        if (point.transitionRoutine != null)
+            StopCoroutine(point.transitionRoutine);
+
+        point.transitionRoutine = StartCoroutine(ReplaceAnimated(point, desiredPrefab, targetScale));
+    }
+
+    private void ReplaceImmediate(ScatterPointState point, GameObject desiredPrefab, Vector3 targetScale)
+    {
+        if (point.currentInstance != null)
+            DestroyScatterObject(point.currentInstance);
+
+        point.currentInstance = null;
+        point.currentPrefab = null;
+
+        if (desiredPrefab == null)
+            return;
+
+        GameObject obj = CreateScatterObject(desiredPrefab, GetOrCreateSpawnedContainer());
+        obj.transform.position = point.position;
+        obj.transform.rotation = point.rotation;
+        obj.transform.localScale = targetScale;
+
+        point.currentInstance = obj;
+        point.currentPrefab = desiredPrefab;
+    }
+
+    private IEnumerator ReplaceAnimated(ScatterPointState point, GameObject desiredPrefab, Vector3 targetScale)
+    {
+        if (point.currentInstance != null)
+        {
+            yield return ScaleObject(point.currentInstance.transform, point.currentInstance.transform.localScale, Vector3.zero, shrinkDuration);
+            DestroyScatterObject(point.currentInstance);
+            point.currentInstance = null;
+            point.currentPrefab = null;
+        }
+
+        if (desiredPrefab != null)
+        {
+            GameObject obj = CreateScatterObject(desiredPrefab, GetOrCreateSpawnedContainer());
+            obj.transform.position = point.position;
+            obj.transform.rotation = point.rotation;
+            obj.transform.localScale = Vector3.zero;
+
+            point.currentInstance = obj;
+            point.currentPrefab = desiredPrefab;
+
+            yield return ScaleObject(obj.transform, Vector3.zero, targetScale, growDuration);
+        }
+
+        point.transitionRoutine = null;
+    }
+
+    private IEnumerator ScaleObject(Transform target, Vector3 from, Vector3 to, float duration)
+    {
+        if (target == null)
+            yield break;
+
+        if (duration <= 0.0001f)
+        {
+            target.localScale = to;
+            yield break;
+        }
+
+        float t = 0f;
+        while (t < duration)
+        {
+            if (target == null)
+                yield break;
+
+            t += Time.deltaTime;
+            float a = Mathf.Clamp01(t / duration);
+            a = a * a * (3f - 2f * a); // smoothstep
+            target.localScale = Vector3.LerpUnclamped(from, to, a);
+            yield return null;
+        }
+
+        if (target != null)
+            target.localScale = to;
     }
 
     private List<ClimateScatterRule> GetValidRules()
     {
         List<ClimateScatterRule> valid = new();
 
+        if (rules == null)
+            return valid;
+
         foreach (ClimateScatterRule rule in rules)
         {
-            if (rule == null)
-                continue;
-
-            if (rule.prefabs == null || rule.prefabs.Length == 0)
+            if (rule == null || rule.prefabs == null || rule.prefabs.Length == 0)
                 continue;
 
             if (currentTemperature < rule.minTemperature || currentTemperature > rule.maxTemperature)
@@ -237,17 +380,16 @@ public class ClimateScatter : MonoBehaviour
         return valid;
     }
 
-    private ClimateScatterRule PickRule(List<ClimateScatterRule> validRules)
+    private ClimateScatterRule PickRuleDeterministic(List<ClimateScatterRule> validRules, int pointIndex)
     {
         float totalWeight = 0f;
-
         foreach (ClimateScatterRule rule in validRules)
             totalWeight += Mathf.Max(0f, rule.weight);
 
         if (totalWeight <= 0f)
             return null;
 
-        float pick = Random.Range(0f, totalWeight);
+        float pick = Hash01(pointIndex, 37) * totalWeight;
         float running = 0f;
 
         foreach (ClimateScatterRule rule in validRules)
@@ -260,6 +402,42 @@ public class ClimateScatter : MonoBehaviour
         return validRules[validRules.Count - 1];
     }
 
+    private GameObject PickPrefabDeterministic(ClimateScatterRule rule, int pointIndex)
+    {
+        if (rule.prefabs == null || rule.prefabs.Length == 0)
+            return null;
+
+        int idx = Mathf.FloorToInt(Hash01(pointIndex, 53) * rule.prefabs.Length);
+        idx = Mathf.Clamp(idx, 0, rule.prefabs.Length - 1);
+        return rule.prefabs[idx];
+    }
+
+    private int GetPointCapacity()
+    {
+        float mult = scaleCountWithHumidity
+            ? Mathf.Max(humidityCountMultiplier.x, humidityCountMultiplier.y)
+            : 1f;
+
+        return Mathf.Max(1, Mathf.CeilToInt(baseCount * Mathf.Max(1f, mult)));
+    }
+
+    private float GetActiveRatio()
+    {
+        if (_points.Count == 0)
+            return 0f;
+
+        int targetActiveCount = baseCount;
+
+        if (scaleCountWithHumidity)
+        {
+            float humidity01 = Mathf.Clamp01(currentHumidity / 100f);
+            float mult = Mathf.Lerp(humidityCountMultiplier.x, humidityCountMultiplier.y, humidity01);
+            targetActiveCount = Mathf.RoundToInt(baseCount * mult);
+        }
+
+        return Mathf.Clamp01((float)targetActiveCount / _points.Count);
+    }
+
     private List<Vector2> GenerateRandomPoints(int targetCount)
     {
         List<Vector2> points = new();
@@ -269,7 +447,6 @@ public class ClimateScatter : MonoBehaviour
         while (points.Count < targetCount && attempts < maxAttempts)
         {
             attempts++;
-
             Vector2 p = SamplePoint();
             bool ok = true;
 
@@ -381,13 +558,122 @@ public class ClimateScatter : MonoBehaviour
             return existing;
 
         GameObject go = new GameObject(spawnedContainerName);
-
 #if UNITY_EDITOR
-        Undo.RegisterCreatedObjectUndo(go, "Create Climate Scatter Container");
+        if (!Application.isPlaying)
+            Undo.RegisterCreatedObjectUndo(go, "Create Climate Scatter Animated Container");
 #endif
-
         go.transform.SetParent(container, false);
         return go.transform;
+    }
+
+    private GameObject CreateScatterObject(GameObject prefab, Transform parent)
+    {
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+            return (GameObject)PrefabUtility.InstantiatePrefab(prefab, parent);
+#endif
+        return Instantiate(prefab, parent);
+    }
+
+    private void DestroyScatterObject(GameObject obj)
+    {
+        if (obj == null)
+            return;
+
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            Undo.DestroyObjectImmediate(obj);
+            return;
+        }
+#endif
+        Destroy(obj);
+    }
+
+    private int GetPointStableId(ScatterPointState point)
+    {
+        return Mathf.RoundToInt(point.position.x * 100f) ^
+               Mathf.RoundToInt(point.position.y * 100f) ^
+               Mathf.RoundToInt(point.position.z * 100f);
+    }
+
+    private float Hash01(int a, int b)
+    {
+        unchecked
+        {
+            uint x = (uint)(a * 73856093 ^ b * 19349663 ^ seed * 83492791);
+            x ^= x >> 17;
+            x *= 0xed5ad4bbU;
+            x ^= x >> 11;
+            x *= 0xac4c1b51U;
+            x ^= x >> 15;
+            x *= 0x31848babU;
+            x ^= x >> 14;
+            return (x & 0x00FFFFFF) / 16777215f;
+        }
+    }
+
+    private string BuildRuleSignature(float temperature, float humidity)
+    {
+        if (rules == null || rules.Length == 0)
+            return "";
+
+        System.Text.StringBuilder sb = new System.Text.StringBuilder();
+
+        for (int i = 0; i < rules.Length; i++)
+        {
+            ClimateScatterRule rule = rules[i];
+            if (rule == null) continue;
+
+            bool valid =
+                temperature >= rule.minTemperature &&
+                temperature <= rule.maxTemperature &&
+                humidity >= rule.minHumidity &&
+                humidity <= rule.maxHumidity &&
+                rule.prefabs != null &&
+                rule.prefabs.Length > 0;
+
+            sb.Append(valid ? '1' : '0');
+        }
+
+        return sb.ToString();
+    }
+
+    public void ApplyClimateIfRuleSetChanged(float temperature, float humidity)
+    {
+        string newSignature = BuildRuleSignature(temperature, humidity);
+
+        if (_hasAppliedClimateOnce && newSignature == _lastRuleSignature)
+            return;
+
+        _hasAppliedClimateOnce = true;
+        _lastRuleSignature = newSignature;
+
+        RebuildLayoutAndRefresh(temperature, humidity);
+    }
+
+    private void ApplyRandomScatterRotation()
+    {
+        if (!rotateScatterBeforeRebuild)
+            return;
+
+        Vector3 euler = transform.localEulerAngles;
+        euler.y = Random.Range(randomYRotationRange.x, randomYRotationRange.y);
+        transform.localEulerAngles = euler;
+    }
+
+    public void RebuildLayoutAndRefresh(float temperature, float humidity)
+    {
+        SetClimate(temperature, humidity);
+
+        ClearSpawnedInstances();
+
+        _points.Clear();
+        _pointsBuilt = false;
+
+        ApplyRandomScatterRotation();
+        BuildSpawnPoints();
+        RefreshPoints();
     }
 }
 
@@ -403,37 +689,17 @@ public class ClimateScatterEditor : Editor
 
         GUILayout.Space(8);
 
-        if (GUILayout.Button("Generate (One-time)"))
-            s.Generate();
+        if (GUILayout.Button("Build Spawn Points"))
+            s.BuildSpawnPoints();
+
+        if (GUILayout.Button("Refresh Current Climate"))
+            s.RefreshPoints();
 
         if (GUILayout.Button("Clear Spawned"))
-            s.Clear();
+            s.ClearSpawnedInstances();
 
-        GUILayout.Space(8);
-
-        if (GUILayout.Button("Dry Test"))
-        {
-            s.SetClimate(18f, 20f);
-            EditorUtility.SetDirty(s);
-        }
-
-        if (GUILayout.Button("Neutral Test"))
-        {
-            s.SetClimate(14f, 50f);
-            EditorUtility.SetDirty(s);
-        }
-
-        if (GUILayout.Button("Wet Test"))
-        {
-            s.SetClimate(14f, 85f);
-            EditorUtility.SetDirty(s);
-        }
-
-        if (GUILayout.Button("Cold Wet Test"))
-        {
-            s.SetClimate(4f, 90f);
-            EditorUtility.SetDirty(s);
-        }
+        if (GUILayout.Button("Rebuild All"))
+            s.ClearAll();
     }
 }
 #endif
