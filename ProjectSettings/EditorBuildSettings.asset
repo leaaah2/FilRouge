@@ -6,8 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/camping-car.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 5e65152e3a53e4f4383109aba21ba96d
+  - enabled: 0
+    path: Assets/Scenes/book scene.unity
+    guid: 0eef521082a863e4b86531003ae54c7a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 016f116a9debf5447a01e0411af7faa2, type: 2}
